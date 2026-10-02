@@ -643,7 +643,3 @@ streamlit run src/06_dashboard/pr.py
 **Email:** vandeson2@gmail.com  
 
 ---
-
-
-**Última actualización:** 2026-10-02  
-**Versión:** 1.1 (Pipeline Maestro documentado)
