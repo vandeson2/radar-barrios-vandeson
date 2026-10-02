@@ -1,0 +1,44 @@
+[16:23:51] INFO - ================================================================================
+[16:23:51] INFO - PIPELINE MAESTRO - RADAR DE BARRIO
+[16:23:51] INFO - ================================================================================
+[16:23:51] INFO - Raíz: C:\Users\vande\TFM\radar-barrios
+[16:23:51] INFO - Log: C:\Users\vande\TFM\radar-barrios\logs\pipeline_maestro_20261002_162351.log
+[16:23:51] INFO - 
+Modo: Custom - Stages [4, 5, 6, 7, 8]
+[16:23:51] INFO - 
+================================================================================
+[16:23:51] INFO - STAGE 4: Mapear barrios (fuzzy matching)
+[16:23:51] INFO - ================================================================================
+[16:23:51] INFO - Script: 03_pipeline_mapeo_barrios.py
+[16:24:01] SUCCESS - - 04_mapeo_barrios - COMPLETADO
+[16:24:01] INFO - 
+================================================================================
+[16:24:01] INFO - STAGE 5: Generar capa gold (128 barrios × 32 features)
+[16:24:01] INFO - ================================================================================
+[16:24:01] INFO - Script: _06_capa_gold.py
+[16:24:32] SUCCESS - - 05_capa_gold - COMPLETADO
+[16:24:32] INFO - 
+================================================================================
+[16:24:32] INFO - STAGE 6: Generar lista de feature names
+[16:24:32] INFO - ================================================================================
+[16:24:32] INFO - Script: generar_feature_names.py
+[16:24:34] ERROR - - 06_feature_names - ERROR
+[16:24:34] INFO - 
+================================================================================
+[16:24:34] INFO - STAGE 7: Entrenar modelo Ensemble (SVM + RF + GB)
+[16:24:34] INFO - ================================================================================
+[16:24:34] INFO - Script: train.py
+[16:24:38] ERROR - - 07_train - ERROR
+[16:24:38] ERROR - STDERR: Traceback (most recent call last):
+  File "C:\Users\vande\TFM\radar-barrios\src\05_ml_training\train.py", line 34, in <module>
+    df_gold = pd.read_parquet(gold_path)
+  File "C:\Users\vande\TFM\.venv\Lib\site-packages\pandas\io\parquet.py", line 671, in read_parquet
+    return impl.read(
+          
+[16:24:38] INFO - 
+================================================================================
+[16:24:38] INFO - STAGE 8: Ejecutar dashboard Streamlit
+[16:24:38] INFO - ================================================================================
+[16:24:38] INFO - App: app.py
+[16:24:38] INFO - URL: http://localhost:8501
+[16:24:38] INFO - (Presiona Ctrl+C para detener)

@@ -112,18 +112,7 @@ def validar_estructura(df: pd.DataFrame, columnas_esperadas: set, archivo: Path)
 
 
 def normalizar_tipos_para_parquet(df: pd.DataFrame) -> pd.DataFrame:
-    """
-    Unifica el dtype de las columnas 'object'. El esquema del censo cambió
-    con los meses (ej. 'cod_postal' no existía antes de oct-2022), así que
-    al concatenar meses una misma columna puede mezclar valores reales de
-    unos meses con NaN de otros donde no existía, quedando dtype 'object'
-    con tipos mixtos (int/float/str) que pyarrow rechaza al guardar parquet.
 
-    Si TODOS los valores no nulos de la columna son numéricos, se unifica a
-    float64 (mismo valor, sin pérdida). Si no (ej. coordenadas con coma
-    decimal española, texto), se unifica a dtype 'string'. En ambos casos
-    el valor original se preserva, solo se normaliza la representación.
-    """
     for col in df.select_dtypes(include="object", exclude="str").columns:
         no_nulos = df[col].notna()
         if no_nulos.sum() == 0:

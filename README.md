@@ -2,7 +2,7 @@
 
 **Proyecto de Trabajo Final de Máster (TFM)**  
 **Autor:** Vandeson Sena e Silva  
-**Universidad:** [TU UNIVERSIDAD]  
+**Universidad:** EVOLVE Academy 
 **Año:** 2026
 
 ---
@@ -10,13 +10,15 @@
 ## 📋 Tabla de Contenidos
 
 1. [Descripción General](#descripción-general)
-2. [Instalación](#instalación)
-3. [Ejecución del Pipeline](#ejecución-del-pipeline)
-4. [Estructura del Proyecto](#estructura-del-proyecto)
-5. [Datos Utilizados](#datos-utilizados)
-6. [Resultados Esperados](#resultados-esperados)
-7. [Limitaciones y Caveats](#limitaciones-y-caveats)
-8. [Referencias](#referencias)
+2. [Inicio Rápido](#-inicio-rápido)
+3. [Instalación](#instalación)
+4. [Ejecución del Pipeline](#⚙️-ejecución-del-pipeline)
+5. [Estructura del Proyecto](#estructura-del-proyecto)
+6. [Datos Utilizados](#datos-utilizados)
+7. [Resultados Esperados](#resultados-esperados)
+8. [Limitaciones y Caveats](#limitaciones-y-caveats)
+9. [Documentación Adicional](#-documentación-adicional)
+10. [Referencias](#referencias)
 
 ---
 
@@ -46,6 +48,38 @@ Cada año en Madrid, **inversores, planificadores urbanos y ciudadanos toman dec
 ✅ **Validación Rigurosa:** Correlación con precios oficiales (Registradores)  
 ✅ **Ranking TOP 10:** Barrios en riesgo inmediato  
 ✅ **Informes Exportables:** PDF profesional para presentar a inversores  
+
+---
+
+## 🚀 Inicio Rápido
+
+**En 3 pasos:**
+
+```bash
+# 1. Crear entorno virtual
+python -m venv venv && source venv/bin/activate  # Linux/Mac
+python -m venv venv && venv\Scripts\activate    # Windows
+
+# 2. Instalar dependencias
+pip install -r requirements.txt
+
+# 3. Ejecutar pipeline completo 
+python pipeline_maestro.py --mode all
+
+# Dashboard estará en: http://localhost:8501
+```
+
+**¿Ya tienes datos procesados?**
+```bash
+# Solo entrenar modelo y dashboard 
+python pipeline_maestro.py --mode train-app
+```
+
+**¿Solo quieres ver el dashboard?**
+```bash
+# Abrir app con modelo pre-entrenado
+python pipeline_maestro.py --mode dashboard
+```
 
 ---
 
@@ -108,48 +142,219 @@ mkdir -p data/raw/{2022,2023,2024,2025,2026} data/raw/otros
 
 ## ⚙️ Ejecución del Pipeline
 
-### Opción A: Pipeline Completo (40-50 minutos)
+### 🚀 OPCIÓN RECOMENDADA: Pipeline Maestro Automatizado
+
+El proyecto incluye un **`pipeline_maestro.py`** que orquesta automáticamente los 9 stages de ejecución:
+
+```bash
+# Pipeline completo (2-3 horas)
+python pipeline_maestro.py --mode all
+```
+
+**Stages ejecutados automáticamente:**
+1. ✅ Data Loading (54 meses raw)
+2. ✅ Data Cleaning (limpieza, deduplicación, valores nulos)
+3. ✅ Consolidación Hostelería (5 años de datos)
+4. ✅ Mapeo Barrios (fuzzy matching)
+5. ✅ Capa Gold (128 × 32 features, tabla de features bruta)
+6. ✅ Enriquecimiento (coordenadas, precios, distancia metro)
+7. ✅ Generación Feature Names (listado de feature names)
+8. ✅ Entrenamiento ML (Ensemble: SVM + Random Forest + Gradient Boosting)
+9. ✅ Dashboard Streamlit (http://localhost:8501)
+
+**Ventajas:**
+- Ejecuta automáticamente en orden correcto
+- Validación automática de requisitos antes de cada stage
+- Logging completo con timestamp (`logs/pipeline_maestro_YYYYMMDD_HHMMSS.log`)
+- Detención automática si fallan stages críticos (1-5)
+- Manejo robusto de errores y timeouts (10 min por stage)
+- Reproducible desde cero
+- Posibilidad de ejecutar stages parciales
+
+---
+
+### 🎯 Otros Modos de Ejecución
+
+El `pipeline_maestro.py` soporta varios modos para ejecutar partes específicas:
+
+**Solo hasta Capa Gold (stages 1-5):**
+```bash
+python pipeline_maestro.py --mode hasta --stage 5
+# Tiempo: ~1.5 horas
+# Resultado: data/gold/gold_barrios_*.parquet
+# Nota: Detiene antes de enriquecimiento y ML
+```
+
+**Datos + Enriquecimiento (stages 1-6):**
+```bash
+python pipeline_maestro.py --mode hasta --stage 6
+# Tiempo: ~2 horas
+# Resultado: datos enriquecidos con precios, metro, coordenadas
+```
+
+**Solo ML + Dashboard (stages 6-9, requiere datos gold previos):**
+```bash
+python pipeline_maestro.py --mode train-app
+# Tiempo: ~20 minutos
+# Requisitos: 
+#   - data/gold/gold_barrios_enriquecido.parquet
+#   - data/04_train_test/ (si existen)
+```
+
+**Solo Dashboard (stage 9, requiere modelo entrenado):**
+```bash
+python pipeline_maestro.py --mode dashboard
+# Abre: http://localhost:8501
+# Requisitos: 
+#   - data/04_train_test/modelo_ensemble_v2_mejorado.pkl
+#   - data/04_train_test/scaler_v2_mejorado.pkl
+```
+
+**Ejecutar stage específico:**
+```bash
+python pipeline_maestro.py --mode custom --stage 8
+# Ejecuta solo el entrenamiento (stage 8)
+```
+
+**Limpiar caché de Streamlit:**
+```bash
+python pipeline_maestro.py --clean
+# Elimina: ~/.streamlit, .pytest_cache/, __pycache__/
+# Útil si hay problemas de caché con la app
+```
+
+---
+
+### 📖 Cómo Funciona pipeline_maestro.py
+
+El script orquestador ejecuta los siguientes pasos en orden:
+
+```
+pipeline_maestro.py
+├─ Valida requisitos (config.py, src/, data/)
+├─ Crea logs/pipeline_maestro_YYYYMMDD_HHMMSS.log
+└─ Para cada stage (1-9):
+   ├─ Verifica que exista el script
+   ├─ Ejecuta con timeout de 10 minutos
+   ├─ Captura stdout/stderr
+   ├─ Registra resultado (OK/ERROR/TIMEOUT)
+   └─ Detiene si stage crítico (1-5) falla
+```
+
+**Flujo de datos:**
+```
+Stage 1: Datos raw (CSV, 54 meses)
+   ↓ (9M registros)
+Stage 2: Datos limpios
+   ↓ (sin nulos/duplicados)
+Stages 3-4: Features por categoría
+   ↓ (consolidados por barrio)
+Stage 5: Tabla capa gold (128×32)
+   ↓ (features brutos)
+Stage 6: Capa gold enriquecida (precios, metro, coords)
+   ↓
+Stages 7-8: Modelo ML entrenado + importancia de features
+   ↓
+Stage 9: Dashboard interactivo (Streamlit)
+```
+
+**Archivos de Log:**
+- Ubicación: `logs/pipeline_maestro_YYYYMMDD_HHMMSS.log`
+- Contiene: timestamps, duración de cada stage, errores detallados
+- Ver último log: `tail -f logs/pipeline_maestro_*.log`
+
+---
+
+### 📖 Ejecución Manual (Alternativa a pipeline_maestro.py)
+
+Si prefieres ejecutar scripts individuales manualmente:
 
 ```bash
 # 1. Cargar datos raw (54 meses, ~9M registros)
 python src/01_data/01_data_loading.py
-# Output: data/processed/consolidated_*.parquet
+# Output: data/processed/01_consolidated/*.parquet
 
 # 2. Limpiar datos (valores nulos, duplicados, outliers)
 python src/02_cleaning/03_cleaning_main.py
-# Output: data/processed/cleaned/*.parquet
+# Output: data/processed/02_cleaned/*.parquet
 
-# 3. Ingeniería de features + Capa Gold (128 barrios × 32 columnas)
+# 3. Consolidar hostelería (agrupar por mes y barrio)
+python src/03_feature/04_consolidar_hosteleria.py
+# Output: data/processed/03_engineered/consolidado_hosteleria.parquet
+
+# 4. Mapeo de barrios con fuzzy matching
+python src/03_feature/mapeo/03_pipeline_mapeo_barrios.py
+# Output: data/processed/03_engineered/mapping_resultados.csv
+
+# 5. Capa Gold: Ingeniería de features (128 barrios × 32 features)
 python src/03_feature/_06_capa_gold.py
-# Output: data/gold/gold_barrios_completo.parquet
+# Output: data/gold/gold_barrios_*.parquet
 
-# 4. Entrenar modelo ML (Ensemble: SVM + RF + GB)
+# 6. Enriquecimiento: Añade coordenadas, precios, distancia metro
+python src/04_enrichment/_05_pipeline_enriquecimiento.py
+# Output: data/gold/gold_barrios_enriquecido.parquet
+
+# 7. Generar listado de nombres de features
+python src/05_ml_training/generar_feature_names.py
+# Output: data/04_train_test/feature_names_v2_mejorado.json
+
+# 8. Entrenar modelo Ensemble (SVM + RF + Gradient Boosting)
 python src/05_ml_training/train.py
-# Output: data/04_train_test/modelo_ensemble_v2_mejorado.pkl
+# Outputs: 
+#   - data/04_train_test/modelo_ensemble_v2_mejorado.pkl
+#   - data/04_train_test/scaler_v2_mejorado.pkl
+#   - reports/feature_importance.png
 
-# 5. Ejecutar Dashboard
-streamlit run src/06_dashboard/pr.py
+# 9. Ejecutar Dashboard Streamlit
+streamlit run src/06_dashboard/app.py
 # Abre: http://localhost:8501
 ```
 
-### Opción B: Dashboard Directo (si ya existe modelo)
-
-```bash
-# Ejecutar solo el dashboard (carga modelo pre-entrenado)
-streamlit run src/06_dashboard/pr.py
-```
-
-### Opciones de Ejecución
-
-```bash
-# Dashboard en desarrollo (hot reload)
-streamlit run src/06_dashboard/pr.py --logger.level=debug
-
-# Dashboard en producción
-streamlit run src/06_dashboard/pr.py --logger.level=error
-```
+⚠️ **Nota:** La ejecución manual requiere respetar el orden exacto. El `pipeline_maestro.py` automatiza esto.
 
 ---
+
+### 📊 Monitoreo y Logs del Pipeline
+
+**Ver logs de ejecución:**
+
+```bash
+# Ver archivo de log más reciente
+type logs/pipeline_maestro_*.log  # Windows
+cat logs/pipeline_maestro_*.log   # Linux/Mac
+
+# Ver últimas 50 líneas (útil mientras se ejecuta)
+Get-Content logs/pipeline_maestro_*.log -Tail 50  # PowerShell
+tail -50 logs/pipeline_maestro_*.log               # Bash
+
+# Buscar errores en los logs
+Select-String "ERROR" logs/pipeline_maestro_*.log  # PowerShell
+grep "ERROR" logs/pipeline_maestro_*.log           # Bash
+```
+
+**Ejemplo de log:**
+```
+[15:59:53] INFO - ================================================================================
+[15:59:53] INFO - PIPELINE MAESTRO - RADAR DE BARRIO
+[15:59:53] INFO - ================================================================================
+[16:00:01] INFO - Stage 1: Cargar datos raw (54 meses)
+[16:00:01] INFO - Script: 01_data_loading.py
+[16:02:15] SUCCESS - 01_data_loading - COMPLETADO
+[16:02:15] INFO - Stage 2: Limpiar datos (valores nulos, duplicados)
+...
+[16:25:40] SUCCESS - PIPELINE COMPLETADO EXITOSAMENTE
+[16:25:40] INFO - Duración total: 25.6 minutos
+```
+
+**En caso de error:**
+```bash
+# Ver el stage que falló
+Select-String "ERROR|TIMEOUT" logs/pipeline_maestro_*.log
+
+# Ver stderr del script que falló (últimos 300 caracteres)
+Select-String "STDERR" logs/pipeline_maestro_*.log
+```
+
 
 ## 📁 Estructura del Proyecto
 
@@ -430,48 +635,15 @@ streamlit run src/06_dashboard/pr.py
 - **shap** (0.42+) → Explicabilidad
 - **plotly** (5.17+) → Gráficos interactivos
 
-### Papers y Metodologías
-
-- [SHAP: A Unified Approach to Interpreting Model Predictions](https://arxiv.org/abs/1705.07874)
-- [Gentrification and Neighborhood Change](https://www.jstor.org/stable/41058701)
-- [Machine Learning for Urban Analytics](https://doi.org/10.1186/s42408-019-0005-6)
-
----
-
-## 🤝 Contribuciones y Licencia
-
-### Cómo Contribuir
-
-Este es un proyecto académico (TFM). Para sugerencias o mejoras:
-
-1. Fork el repositorio
-2. Crea una rama: `git checkout -b feature/mi-mejora`
-3. Commit: `git commit -m "Descripción del cambio"`
-4. Push: `git push origin feature/mi-mejora`
-5. Abre un Pull Request
-
-### Licencia
-
-MIT License - Ver LICENSE.md para detalles
-
 ---
 
 ## 📧 Contacto
 
 **Autor:** Vandeson Sena e Silva  
 **Email:** vandeson2@gmail.com  
-**GitHub:** [tu-usuario/radar-barrios](https://github.com)
 
 ---
 
-## 🙏 Agradecimientos
 
-- **Ayuntamiento de Madrid** - Datos públicos (Censo Locales, Padrón, Barrios)
-- **INE** - Indicadores de Renta
-- **Colegio de Registradores** - Precios TINSA
-- **Comunidad de Data Science** - Librerías y metodologías
-
----
-
-**Última actualización:** 2026-09-21  
-**Versión:** 1.0 (TFM Final)
+**Última actualización:** 2026-10-02  
+**Versión:** 1.1 (Pipeline Maestro documentado)

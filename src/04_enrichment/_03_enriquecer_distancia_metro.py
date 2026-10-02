@@ -111,8 +111,8 @@ def calcular_accesibilidad_metro(
 
 
 def procesar_csv_o_parquet(
-    path_entrada: str = "data/barrios_madrid_130_CORREGIDO.csv",
-    path_salida: str = "data/datos_metro_barrios.csv",
+    path_entrada: str = "data/barrios_madrid.csv",
+    
 ) -> pd.DataFrame:
     """Función Orquestadora: Carga la ruta parametrizada (CSV o Parquet),
 

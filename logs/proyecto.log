@@ -12373,3 +12373,2036 @@ Traceback (most recent call last):
     self._sock.shutdown(socket.SHUT_RDWR)
     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
 ConnectionResetError: [WinError 10054] Se ha forzado la interrupción de una conexión existente por el host remoto
+2026-10-01 19:55:01,307 - config - INFO - Generando base de barrios...
+2026-10-01 19:55:01,307 - config - INFO - 
+Cargando barrios...
+2026-10-01 19:58:18,779 - config - INFO - Generando base de barrios...
+2026-10-01 19:58:18,780 - config - INFO - 
+Cargando barrios...
+2026-10-01 19:58:22,995 - config - INFO - 
+Seleccionando columnas...
+2026-10-01 19:58:23,031 - config - INFO - 
+VALIDACIÓN]
+2026-10-01 19:58:23,032 - config - INFO -   Total barrios: 131
+2026-10-01 19:58:23,033 - config - INFO -   Duplicados: 0
+2026-10-01 19:58:23,041 - config - INFO -   Nulos en barrio_id: 0
+2026-10-01 19:58:23,043 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-01 19:58:23,044 - config - INFO - Obteniendo base inicial (131, 2)
+2026-10-01 19:58:23,045 - config - INFO - Generando capa base..
+2026-10-01 19:58:23,045 - config - INFO - 
+Cargando datos...
+2026-10-01 19:58:23,045 - config - INFO - Generando base de barrios...
+2026-10-01 19:58:23,046 - config - INFO - 
+Cargando barrios...
+2026-10-01 19:58:23,057 - config - INFO - 
+Seleccionando columnas...
+2026-10-01 19:58:23,060 - config - INFO - 
+VALIDACIÓN]
+2026-10-01 19:58:23,060 - config - INFO -   Total barrios: 131
+2026-10-01 19:58:23,061 - config - INFO -   Duplicados: 0
+2026-10-01 19:58:23,061 - config - INFO -   Nulos en barrio_id: 0
+2026-10-01 19:58:23,062 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-01 20:00:08,993 - config - INFO - Generando base de barrios...
+2026-10-01 20:00:08,994 - config - INFO - 
+Cargando barrios...
+2026-10-01 20:00:09,164 - config - INFO - 
+Seleccionando columnas...
+2026-10-01 20:00:09,189 - config - INFO - 
+VALIDACIÓN]
+2026-10-01 20:00:09,190 - config - INFO -   Total barrios: 131
+2026-10-01 20:00:09,191 - config - INFO -   Duplicados: 0
+2026-10-01 20:00:09,193 - config - INFO -   Nulos en barrio_id: 0
+2026-10-01 20:00:09,194 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-01 20:00:51,118 - config - INFO - ================================================================================
+2026-10-01 20:00:51,118 - config - INFO - INICIANDO PIPELINE DE MAPEO COMPLETO DE BARRIOS
+2026-10-01 20:00:51,118 - config - INFO - ================================================================================
+2026-10-01 20:00:51,118 - config - INFO - 
+CARGANDO DATASETS BASE
+2026-10-01 20:00:59,795 - config - INFO - Consolidado cargado: (8519303, 16)
+2026-10-01 20:00:59,810 - config - INFO - Catálogo de barrios cargado: (131, 6)
+2026-10-01 20:00:59,812 - config - INFO - 
+EJECUTANDO MAPEOS (FUZZY + MANUAL)
+2026-10-01 20:00:59,994 - config - INFO - Ejecutando Fuzzy Matching...
+2026-10-01 20:00:59,996 - config - INFO - Normalizando descripciones de barrios para fuzzy matching...
+2026-10-01 20:01:03,492 - config - INFO - Ejecutando fuzzy matching (similitud >0.75)...
+
+2026-10-01 20:01:03,516 - config - INFO -  101: 'PALACIO' → SIN MATCH
+2026-10-01 20:01:03,544 - config - INFO -  102: 'EMBAJADORES' → SIN MATCH
+2026-10-01 20:01:03,602 - config - INFO -  103: 'CORTES' → SIN MATCH
+2026-10-01 20:01:03,647 - config - INFO -  104: 'JUSTICIA' → SIN MATCH
+2026-10-01 20:01:03,689 - config - INFO -  105: 'UNIVERSIDAD' → SIN MATCH
+2026-10-01 20:01:03,728 - config - INFO -  106: 'SOL' → SIN MATCH
+2026-10-01 20:01:03,801 - config - INFO -  201: 'IMPERIAL' → SIN MATCH
+2026-10-01 20:01:03,825 - config - INFO -  202: 'ACACIAS' → SIN MATCH
+2026-10-01 20:01:03,880 - config - INFO -  203: 'CHOPERA' → SIN MATCH
+2026-10-01 20:01:03,939 - config - INFO -  204: 'LEGAZPI' → SIN MATCH
+2026-10-01 20:01:03,984 - config - INFO -  205: 'DELICIAS' → SIN MATCH
+2026-10-01 20:01:04,034 - config - INFO -  206: 'PALOS DE MOGUER' → SIN MATCH
+2026-10-01 20:01:04,100 - config - INFO -  206: 'PALOS DE LA FRONTERA' → SIN MATCH
+2026-10-01 20:01:04,160 - config - INFO -  207: 'ATOCHA' → SIN MATCH
+2026-10-01 20:01:04,223 - config - INFO -  301: 'PACIFICO' → SIN MATCH
+2026-10-01 20:01:04,284 - config - INFO -  302: 'ADELFAS' → SIN MATCH
+2026-10-01 20:01:04,328 - config - INFO -  303: 'ESTRELLA' → SIN MATCH
+2026-10-01 20:01:04,368 - config - INFO -  304: 'IBIZA' → SIN MATCH
+2026-10-01 20:01:04,428 - config - INFO -  305: 'LOS JERONIMOS' → SIN MATCH
+2026-10-01 20:01:04,463 - config - INFO -  306: 'NINO JESUS' → SIN MATCH
+2026-10-01 20:01:04,486 - config - INFO -  401: 'RECOLETOS' → SIN MATCH
+2026-10-01 20:01:04,509 - config - INFO -  402: 'GOYA' → SIN MATCH
+2026-10-01 20:01:04,551 - config - INFO -  403: 'FUENTE DEL BERRO' → SIN MATCH
+2026-10-01 20:01:04,574 - config - INFO -  404: 'GUINDALERA' → SIN MATCH
+2026-10-01 20:01:04,593 - config - INFO -  405: 'LISTA' → SIN MATCH
+2026-10-01 20:01:04,614 - config - INFO -  406: 'CASTELLANA' → SIN MATCH
+2026-10-01 20:01:04,731 - config - INFO -  501: 'EL VISO' → SIN MATCH
+2026-10-01 20:01:04,755 - config - INFO -  502: 'PROSPERIDAD' → SIN MATCH
+2026-10-01 20:01:04,804 - config - INFO -  503: 'CIUDAD JARDIN' → SIN MATCH
+2026-10-01 20:01:04,866 - config - INFO -  504: 'HISPANOAMERICA' → SIN MATCH
+2026-10-01 20:01:04,940 - config - INFO -  505: 'NUEVA ESPANA' → SIN MATCH
+2026-10-01 20:01:05,010 - config - INFO -  506: 'CASTILLA' → SIN MATCH
+2026-10-01 20:01:05,045 - config - INFO -  601: 'BELLAS VISTAS' → SIN MATCH
+2026-10-01 20:01:05,076 - config - INFO -  602: 'CUATRO CAMINOS' → SIN MATCH
+2026-10-01 20:01:05,104 - config - INFO -  603: 'CASTILLEJOS' → SIN MATCH
+2026-10-01 20:01:05,138 - config - INFO -  604: 'ALMENARA' → SIN MATCH
+2026-10-01 20:01:05,189 - config - INFO -  605: 'VALDEACEDERAS' → SIN MATCH
+2026-10-01 20:01:05,222 - config - INFO -  606: 'BERRUGUETE' → SIN MATCH
+2026-10-01 20:01:05,261 - config - INFO -  701: 'GAZTAMBIDE' → SIN MATCH
+2026-10-01 20:01:05,297 - config - INFO -  702: 'ARAPILES' → SIN MATCH
+2026-10-01 20:01:05,334 - config - INFO -  703: 'TRAFALGAR' → SIN MATCH
+2026-10-01 20:01:05,386 - config - INFO -  704: 'ALMAGRO' → SIN MATCH
+2026-10-01 20:01:05,441 - config - INFO -  705: 'RIOS ROSAS' → SIN MATCH
+2026-10-01 20:01:05,482 - config - INFO -  706: 'VALLEHERMOSO' → SIN MATCH
+2026-10-01 20:01:05,523 - config - INFO -  801: 'EL PARDO' → SIN MATCH
+2026-10-01 20:01:05,556 - config - INFO -  802: 'FUENTELARREINA' → SIN MATCH
+2026-10-01 20:01:05,596 - config - INFO -  803: 'PENA GRANDE' → SIN MATCH
+2026-10-01 20:01:05,640 - config - INFO -  804: 'EL PILAR' → SIN MATCH
+2026-10-01 20:01:05,674 - config - INFO -  805: 'LA PAZ' → SIN MATCH
+2026-10-01 20:01:05,701 - config - INFO -  806: 'VALVERDE' → SIN MATCH
+2026-10-01 20:01:05,733 - config - INFO -  807: 'MIRASIERRA' → SIN MATCH
+2026-10-01 20:01:05,770 - config - INFO -  808: 'EL GOLOSO' → SIN MATCH
+2026-10-01 20:01:05,802 - config - INFO -  901: 'CASA DE CAMPO' → SIN MATCH
+2026-10-01 20:01:05,829 - config - INFO -  902: 'ARGUELLES' → SIN MATCH
+2026-10-01 20:01:05,862 - config - INFO -  903: 'CIUDAD UNIVERSITARIA' → SIN MATCH
+2026-10-01 20:01:05,908 - config - INFO -  904: 'VALDEZARZA' → SIN MATCH
+2026-10-01 20:01:05,954 - config - INFO -  905: 'VALDEMARIN' → SIN MATCH
+2026-10-01 20:01:05,991 - config - INFO -  906: 'EL PLANTIO' → SIN MATCH
+2026-10-01 20:01:06,039 - config - INFO -  907: 'ARAVACA' → SIN MATCH
+2026-10-01 20:01:06,075 - config - INFO -  1001: 'LOS CARMENES' → SIN MATCH
+2026-10-01 20:01:06,132 - config - INFO -  1002: 'PUERTA DEL ANGEL' → SIN MATCH
+2026-10-01 20:01:06,171 - config - INFO -  1003: 'LUCERO' → SIN MATCH
+2026-10-01 20:01:06,198 - config - INFO -  1004: 'ALUCHE' → SIN MATCH
+2026-10-01 20:01:06,230 - config - INFO -  1005: 'CAMPAMENTO' → SIN MATCH
+2026-10-01 20:01:06,286 - config - INFO -  1006: 'CUATRO VIENTOS' → SIN MATCH
+2026-10-01 20:01:06,315 - config - INFO -  1007: 'LAS AGUILAS' → SIN MATCH
+2026-10-01 20:01:06,345 - config - INFO -  1101: 'COMILLAS' → SIN MATCH
+2026-10-01 20:01:06,387 - config - INFO -  1102: 'OPANEL' → SIN MATCH
+2026-10-01 20:01:06,418 - config - INFO -  1103: 'SAN ISIDRO' → SIN MATCH
+2026-10-01 20:01:06,442 - config - INFO -  1104: 'VISTA ALEGRE' → SIN MATCH
+2026-10-01 20:01:06,470 - config - INFO -  1105: 'PUERTA BONITA' → SIN MATCH
+2026-10-01 20:01:06,502 - config - INFO -  1106: 'BUENAVISTA' → SIN MATCH
+2026-10-01 20:01:06,537 - config - INFO -  1107: 'ABRANTES' → SIN MATCH
+2026-10-01 20:01:06,563 - config - INFO -  1201: 'ORCASITAS' → SIN MATCH
+2026-10-01 20:01:06,593 - config - INFO -  1202: 'ORCASUR' → SIN MATCH
+2026-10-01 20:01:06,619 - config - INFO -  1203: 'SAN FERMIN' → SIN MATCH
+2026-10-01 20:01:06,648 - config - INFO -  1204: 'ALMENDRALES' → SIN MATCH
+2026-10-01 20:01:06,681 - config - INFO -  1205: 'MOSCARDO' → SIN MATCH
+2026-10-01 20:01:06,718 - config - INFO -  1206: 'ZOFIO' → SIN MATCH
+2026-10-01 20:01:06,785 - config - INFO -  1207: 'PRADOLONGO' → SIN MATCH
+2026-10-01 20:01:06,837 - config - INFO -  1301: 'ENTREVIAS' → SIN MATCH
+2026-10-01 20:01:06,868 - config - INFO -  1302: 'SAN DIEGO' → SIN MATCH
+2026-10-01 20:01:06,907 - config - INFO -  1303: 'PALOMERAS BAJAS' → SIN MATCH
+2026-10-01 20:01:06,950 - config - INFO -  1304: 'PALOMERAS SURESTE' → SIN MATCH
+2026-10-01 20:01:06,975 - config - INFO -  1305: 'PORTAZGO' → SIN MATCH
+2026-10-01 20:01:07,005 - config - INFO -  1306: 'NUMANCIA' → SIN MATCH
+2026-10-01 20:01:07,026 - config - INFO -  1401: 'PAVONES' → SIN MATCH
+2026-10-01 20:01:07,051 - config - INFO -  1402: 'HORCAJO' → SIN MATCH
+2026-10-01 20:01:07,084 - config - INFO -  1403: 'MARROQUINA' → SIN MATCH
+2026-10-01 20:01:07,119 - config - INFO -  1404: 'MEDIA LEGUA' → SIN MATCH
+2026-10-01 20:01:07,154 - config - INFO -  1405: 'FONTARRON' → SIN MATCH
+2026-10-01 20:01:07,184 - config - INFO -  1406: 'VINATEROS' → SIN MATCH
+2026-10-01 20:01:07,228 - config - INFO -  1501: 'VENTAS' → SIN MATCH
+2026-10-01 20:01:07,258 - config - INFO -  1502: 'PUEBLO NUEVO' → SIN MATCH
+2026-10-01 20:01:07,294 - config - INFO -  1503: 'QUINTANA' → SIN MATCH
+2026-10-01 20:01:07,318 - config - INFO -  1504: 'CONCEPCION' → SIN MATCH
+2026-10-01 20:01:07,357 - config - INFO -  1505: 'SAN PASCUAL' → SIN MATCH
+2026-10-01 20:01:07,390 - config - INFO -  1506: 'SAN JUAN BAUTISTA' → SIN MATCH
+2026-10-01 20:01:07,423 - config - INFO -  1507: 'COLINA' → SIN MATCH
+2026-10-01 20:01:07,451 - config - INFO -  1508: 'ATALAYA' → SIN MATCH
+2026-10-01 20:01:07,470 - config - INFO -  1509: 'COSTILLARES' → SIN MATCH
+2026-10-01 20:01:07,495 - config - INFO -  1601: 'PALOMAS' → SIN MATCH
+2026-10-01 20:01:07,517 - config - INFO -  1602: 'PIOVERA' → SIN MATCH
+2026-10-01 20:01:07,548 - config - INFO -  1603: 'CANILLAS' → SIN MATCH
+2026-10-01 20:01:07,584 - config - INFO -  1604: 'PINAR DEL REY' → SIN MATCH
+2026-10-01 20:01:07,605 - config - INFO -  1605: 'APOSTOL SANTIAGO' → SIN MATCH
+2026-10-01 20:01:07,627 - config - INFO -  1606: 'VALDEFUENTES' → SIN MATCH
+2026-10-01 20:01:07,669 - config - INFO -  1701: 'SAN ANDRES' → SIN MATCH
+2026-10-01 20:01:07,739 - config - INFO -  1702: 'SAN CRISTOBAL' → SIN MATCH
+2026-10-01 20:01:07,814 - config - INFO -  1703: 'BUTARQUE' → SIN MATCH
+2026-10-01 20:01:07,867 - config - INFO -  1704: 'LOS ROSALES' → SIN MATCH
+2026-10-01 20:01:07,921 - config - INFO -  1705: 'LOS ANGELES' → SIN MATCH
+2026-10-01 20:01:07,972 - config - INFO -  1801: 'CASCO H.VALLECAS' → SIN MATCH
+2026-10-01 20:01:08,008 - config - INFO -  1802: 'SANTA EUGENIA' → SIN MATCH
+2026-10-01 20:01:08,043 - config - INFO -  1803: 'ENSANCHE DE VALLECAS' → SIN MATCH
+2026-10-01 20:01:08,081 - config - INFO -  1901: 'CASCO H.VICALVARO' → SIN MATCH
+2026-10-01 20:01:08,112 - config - INFO -  1902: 'VALDEBERNARDO' → SIN MATCH
+2026-10-01 20:01:08,150 - config - INFO -  1903: 'VALDERRIVAS' → SIN MATCH
+2026-10-01 20:01:08,173 - config - INFO -  1904: 'EL CANAVERAL' → SIN MATCH
+2026-10-01 20:01:08,197 - config - INFO -  2001: 'SIMANCAS' → SIN MATCH
+2026-10-01 20:01:08,225 - config - INFO -  2002: 'HELLIN' → SIN MATCH
+2026-10-01 20:01:08,251 - config - INFO -  2003: 'AMPOSTA' → SIN MATCH
+2026-10-01 20:01:08,273 - config - INFO -  2004: 'ARCOS' → SIN MATCH
+2026-10-01 20:01:08,300 - config - INFO -  2005: 'ROSAS' → SIN MATCH
+2026-10-01 20:01:08,329 - config - INFO -  2006: 'REJAS' → SIN MATCH
+2026-10-01 20:01:08,355 - config - INFO -  2007: 'CANILLEJAS' → SIN MATCH
+2026-10-01 20:01:08,377 - config - INFO -  2008: 'EL SALVADOR' → SIN MATCH
+2026-10-01 20:01:08,406 - config - INFO -  2101: 'ALAMEDA DE OSUNA' → SIN MATCH
+2026-10-01 20:01:08,440 - config - INFO -  2102: 'AEROPUERTO' → SIN MATCH
+2026-10-01 20:01:08,476 - config - INFO -  2103: 'CASCO H.BARAJAS' → SIN MATCH
+2026-10-01 20:01:08,499 - config - INFO -  2104: 'TIMON' → SIN MATCH
+2026-10-01 20:01:08,522 - config - INFO -  2105: 'CORRALEJOS' → SIN MATCH
+2026-10-01 20:01:08,529 - config - INFO - Agregando Mapeos Manuales...
+2026-10-01 20:01:08,529 - config - INFO - 
+ Combinando fuzzy + manual...
+2026-10-01 20:01:08,534 - config - INFO -  Agregado: 1901 → 191
+2026-10-01 20:01:08,535 - config - INFO -  Agregado: 1801 → 181
+2026-10-01 20:01:08,535 - config - INFO -  Agregado: 2103 → 213
+2026-10-01 20:01:08,536 - config - INFO -  Agregado: 1701 → 165
+2026-10-01 20:01:08,548 - config - INFO -  Cobertura perfecta: 131 barrios mapeados correctamente.
+2026-10-01 20:01:08,549 - config - INFO - 
+GUARDANDO ARCHIVO FINAL MAPEO BARRIOS
+2026-10-01 20:01:08,630 - config - INFO -  Archivo final generado exitosamente en: C:\Users\vande\TFM\data\gold\mapeo_barrios_final.parquet
+2026-10-01 20:01:08,631 - config - INFO - ================================================================================
+2026-10-01 20:01:08,631 - config - INFO - PIPELINE DE MAPEO COMPLETADO EXITOSAMENTE
+2026-10-01 20:01:08,632 - config - INFO - Tiempo total de ejecución: 17.51 segundos
+2026-10-01 20:01:08,632 - config - INFO -  Total Mappings generados: 131
+2026-10-01 20:01:08,633 - config - INFO - ================================================================================
+2026-10-01 20:01:38,606 - config - INFO - Generando base de barrios...
+2026-10-01 20:01:38,606 - config - INFO - 
+Cargando barrios...
+2026-10-01 20:01:38,648 - config - INFO - 
+Seleccionando columnas...
+2026-10-01 20:01:38,655 - config - INFO - 
+VALIDACIÓN]
+2026-10-01 20:01:38,655 - config - INFO -   Total barrios: 131
+2026-10-01 20:01:38,656 - config - INFO -   Duplicados: 0
+2026-10-01 20:01:38,657 - config - INFO -   Nulos en barrio_id: 0
+2026-10-01 20:01:38,657 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-01 20:01:38,657 - config - INFO - Obteniendo base inicial (131, 2)
+2026-10-01 20:01:38,658 - config - INFO - Generando capa base..
+2026-10-01 20:01:38,658 - config - INFO - 
+Cargando datos...
+2026-10-01 20:01:38,658 - config - INFO - Generando base de barrios...
+2026-10-01 20:01:38,658 - config - INFO - 
+Cargando barrios...
+2026-10-01 20:01:38,661 - config - INFO - 
+Seleccionando columnas...
+2026-10-01 20:01:38,665 - config - INFO - 
+VALIDACIÓN]
+2026-10-01 20:01:38,666 - config - INFO -   Total barrios: 131
+2026-10-01 20:01:38,667 - config - INFO -   Duplicados: 0
+2026-10-01 20:01:38,667 - config - INFO -   Nulos en barrio_id: 0
+2026-10-01 20:01:38,668 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-01 20:01:46,099 - config - INFO - Filtrando solo hostelería...
+2026-10-01 20:01:55,603 - config - INFO - Creando mapeo consolidado → base...
+2026-10-01 20:01:56,010 - config - INFO - Calculando features por barrio...
+2026-10-01 20:01:59,426 - config - INFO - 
+VALIDACIÓN
+2026-10-01 20:01:59,426 - config - INFO -   Barrios: 131
+2026-10-01 20:01:59,428 - config - INFO -   Barrios con >0 bares: 130
+2026-10-01 20:01:59,429 - config - INFO -   Barrios sin bares: 1
+2026-10-01 20:01:59,431 - config - INFO -   Duplicados: 0
+2026-10-01 20:01:59,435 - config - INFO -   Nulos totales: 0
+2026-10-01 20:01:59,474 - config - INFO -  + Hostelería: (131, 12)
+2026-10-01 20:01:59,475 - config - INFO - Generando features demograficas
+2026-10-01 20:01:59,475 - config - INFO - 
+ Cargando datos...
+2026-10-01 20:01:59,591 - config - INFO - Generando base de barrios...
+2026-10-01 20:01:59,591 - config - INFO - 
+Cargando barrios...
+2026-10-01 20:01:59,596 - config - INFO - 
+Seleccionando columnas...
+2026-10-01 20:01:59,603 - config - INFO - 
+VALIDACIÓN]
+2026-10-01 20:01:59,603 - config - INFO -   Total barrios: 131
+2026-10-01 20:01:59,604 - config - INFO -   Duplicados: 0
+2026-10-01 20:01:59,605 - config - INFO -   Nulos en barrio_id: 0
+2026-10-01 20:01:59,605 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-01 20:01:59,611 - config - INFO - Preparando padrón...
+2026-10-01 20:01:59,872 - config - INFO - Agregando por barrio (barrio_id)...
+2026-10-01 20:01:59,897 - config - INFO -  Calculando features demográficos...
+2026-10-01 20:02:02,461 - config - INFO - 
+VALIDACIÓN
+2026-10-01 20:02:02,461 - config - INFO -   Barrios: 131
+2026-10-01 20:02:02,462 - config - INFO -   Población total: 3,512,849
+2026-10-01 20:02:02,464 - config - INFO -   Edad media promedio: 43.8
+2026-10-01 20:02:02,465 - config - INFO -   % Extranjeros promedio: 18.7%
+2026-10-01 20:02:02,465 - config - INFO -   Duplicados: 0
+2026-10-01 20:02:02,466 - config - INFO -   Nulos totales: 0
+2026-10-01 20:02:02,469 - config - INFO -  + Demográficos: (131, 20)
+2026-10-01 20:02:02,470 - config - INFO - 
+ Cargando datos...
+2026-10-01 20:02:02,479 - config - INFO - Generando base de barrios...
+2026-10-01 20:02:02,479 - config - INFO - 
+Cargando barrios...
+2026-10-01 20:02:02,483 - config - INFO - 
+Seleccionando columnas...
+2026-10-01 20:02:02,485 - config - INFO - 
+VALIDACIÓN]
+2026-10-01 20:02:02,486 - config - INFO -   Total barrios: 131
+2026-10-01 20:02:02,486 - config - INFO -   Duplicados: 0
+2026-10-01 20:02:02,487 - config - INFO -   Nulos en barrio_id: 0
+2026-10-01 20:02:02,487 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-01 20:02:02,489 - config - INFO - Preparando datos de renta...
+2026-10-01 20:02:02,494 - config - INFO - Seleccionando años clave...
+2026-10-01 20:02:02,551 - config - INFO - Creando mapeo barrio_id → codigo_distrito...
+2026-10-01 20:02:02,553 - config - INFO - Calculando features económicos...
+2026-10-01 20:02:02,589 - config - INFO - 
+VALIDACIÓN
+2026-10-01 20:02:02,589 - config - INFO -   Barrios: 131
+2026-10-01 20:02:02,590 - config - INFO -   Barrios con renta: 131
+2026-10-01 20:02:02,590 - config - INFO -   Renta media promedio: 29.18k
+2026-10-01 20:02:02,591 - config - INFO -   Cambio renta 2022-2026: 5.19%
+2026-10-01 20:02:02,592 - config - INFO -   Duplicados: 0
+2026-10-01 20:02:02,593 - config - INFO -   Nulos totales: 0
+2026-10-01 20:02:02,598 - config - INFO -  + Económicos: (131, 26)
+2026-10-01 20:02:02,598 - config - INFO - Generando features geografica...
+2026-10-01 20:02:02,599 - config - INFO - 
+Cargando datos...
+2026-10-01 20:02:08,097 - config - INFO - Generando base de barrios...
+2026-10-01 20:02:08,151 - config - INFO - 
+Cargando barrios...
+2026-10-01 20:02:08,671 - config - INFO - 
+Seleccionando columnas...
+2026-10-01 20:02:08,947 - config - INFO - 
+VALIDACIÓN]
+2026-10-01 20:02:08,948 - config - INFO -   Total barrios: 131
+2026-10-01 20:02:08,960 - config - INFO -   Duplicados: 0
+2026-10-01 20:02:08,965 - config - INFO -   Nulos en barrio_id: 0
+2026-10-01 20:02:08,967 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-01 20:02:09,036 - config - INFO - Preparando consolidado...
+2026-10-01 20:02:09,866 - config - INFO - Calculando centroides por barrio...
+2026-10-01 20:02:11,144 - config - INFO - Calculando features geográficos...
+2026-10-01 20:02:11,514 - config - INFO - 
+VALIDACIÓN
+2026-10-01 20:02:11,514 - config - INFO -   Barrios: 131
+2026-10-01 20:02:11,515 - config - INFO -   Distancia_centro min: 0.000 (periferia)
+2026-10-01 20:02:11,518 - config - INFO -   Distancia_centro max: 1.000 (centro)
+2026-10-01 20:02:11,519 - config - INFO -   Distancia_centro promedio: 0.839
+2026-10-01 20:02:11,523 - config - INFO -   Proximidad_metro min: 0.000
+2026-10-01 20:02:11,526 - config - INFO -   Proximidad_metro max: 1.000
+2026-10-01 20:02:11,535 - config - INFO -   Zonas únicas: 2
+2026-10-01 20:02:11,542 - config - INFO -   Duplicados: 0
+2026-10-01 20:02:11,545 - config - INFO -   Nulos: 0
+2026-10-01 20:02:11,597 - config - INFO -  + Geográficos: (131, 29)
+2026-10-01 20:02:11,598 - config - INFO - Generando target...
+2026-10-01 20:02:11,600 - config - INFO - 
+ Cargando datos...
+2026-10-01 20:02:11,600 - config - INFO - Generando base de barrios...
+2026-10-01 20:02:11,601 - config - INFO - 
+Cargando barrios...
+2026-10-01 20:02:11,611 - config - INFO - 
+Seleccionando columnas...
+2026-10-01 20:02:11,616 - config - INFO - 
+VALIDACIÓN]
+2026-10-01 20:02:11,620 - config - INFO -   Total barrios: 131
+2026-10-01 20:02:11,626 - config - INFO -   Duplicados: 0
+2026-10-01 20:02:11,630 - config - INFO -   Nulos en barrio_id: 0
+2026-10-01 20:02:11,639 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-01 20:02:12,277 - config - INFO - 
+Cargando datos...
+2026-10-01 20:02:12,277 - config - INFO - Generando base de barrios...
+2026-10-01 20:02:12,277 - config - INFO - 
+Cargando barrios...
+2026-10-01 20:02:12,284 - config - INFO - 
+Seleccionando columnas...
+2026-10-01 20:02:12,292 - config - INFO - 
+VALIDACIÓN]
+2026-10-01 20:02:12,292 - config - INFO -   Total barrios: 131
+2026-10-01 20:02:12,293 - config - INFO -   Duplicados: 0
+2026-10-01 20:02:12,294 - config - INFO -   Nulos en barrio_id: 0
+2026-10-01 20:02:12,294 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-01 20:02:16,315 - config - INFO - Filtrando solo hostelería...
+2026-10-01 20:02:19,839 - config - INFO - Creando mapeo consolidado → base...
+2026-10-01 20:02:20,194 - config - INFO - Calculando features por barrio...
+2026-10-01 20:02:24,891 - config - INFO - 
+VALIDACIÓN
+2026-10-01 20:02:24,892 - config - INFO -   Barrios: 131
+2026-10-01 20:02:24,895 - config - INFO -   Barrios con >0 bares: 130
+2026-10-01 20:02:24,896 - config - INFO -   Barrios sin bares: 1
+2026-10-01 20:02:24,897 - config - INFO -   Duplicados: 0
+2026-10-01 20:02:24,900 - config - INFO -   Nulos totales: 0
+2026-10-01 20:02:24,925 - config - INFO - 
+ Cargando datos...
+2026-10-01 20:02:24,948 - config - INFO - Generando base de barrios...
+2026-10-01 20:02:24,948 - config - INFO - 
+Cargando barrios...
+2026-10-01 20:02:24,956 - config - INFO - 
+Seleccionando columnas...
+2026-10-01 20:02:24,971 - config - INFO - 
+VALIDACIÓN]
+2026-10-01 20:02:24,972 - config - INFO -   Total barrios: 131
+2026-10-01 20:02:24,972 - config - INFO -   Duplicados: 0
+2026-10-01 20:02:24,973 - config - INFO -   Nulos en barrio_id: 0
+2026-10-01 20:02:24,974 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-01 20:02:24,978 - config - INFO - Preparando datos de renta...
+2026-10-01 20:02:24,998 - config - INFO - Seleccionando años clave...
+2026-10-01 20:02:25,124 - config - INFO - Creando mapeo barrio_id → codigo_distrito...
+2026-10-01 20:02:25,131 - config - INFO - Calculando features económicos...
+2026-10-01 20:02:25,190 - config - INFO - 
+VALIDACIÓN
+2026-10-01 20:02:25,191 - config - INFO -   Barrios: 131
+2026-10-01 20:02:25,195 - config - INFO -   Barrios con renta: 131
+2026-10-01 20:02:25,195 - config - INFO -   Renta media promedio: 29.18k
+2026-10-01 20:02:25,196 - config - INFO -   Cambio renta 2022-2026: 5.19%
+2026-10-01 20:02:25,197 - config - INFO -   Duplicados: 0
+2026-10-01 20:02:25,199 - config - INFO -   Nulos totales: 0
+2026-10-01 20:02:25,201 - config - INFO - Definiendo etiquetado manual...
+2026-10-01 20:02:25,280 - config - INFO - Creando feature target...
+2026-10-01 20:02:25,626 - config - INFO - 
+VALIDACIÓN
+2026-10-01 20:02:25,626 - config - INFO -   Barrios: 131
+2026-10-01 20:02:25,629 - config - INFO -   Gentrificados SÍ (1): 32
+2026-10-01 20:02:25,630 - config - INFO -   Gentrificados NO (0): 99
+2026-10-01 20:02:25,631 - config - INFO -   Desbalance: 24.4% SÍ
+2026-10-01 20:02:25,659 - config - INFO -   Etiquetados manualmente: 3
+2026-10-01 20:02:25,665 - config - INFO -   Etiquetados por heurística: 128
+2026-10-01 20:02:25,666 - config - INFO -   Duplicados: 0
+2026-10-01 20:02:25,668 - config - INFO -   Nulos: 0
+2026-10-01 20:02:25,805 - config - INFO -  + Target: (131, 30)
+2026-10-01 20:03:45,574 - config - INFO - Generando base de barrios...
+2026-10-01 20:03:45,575 - config - INFO - 
+Cargando barrios...
+2026-10-01 20:03:45,694 - config - INFO - 
+Seleccionando columnas...
+2026-10-01 20:03:45,701 - config - INFO - 
+VALIDACIÓN]
+2026-10-01 20:03:45,702 - config - INFO -   Total barrios: 131
+2026-10-01 20:03:45,704 - config - INFO -   Duplicados: 0
+2026-10-01 20:03:45,706 - config - INFO -   Nulos en barrio_id: 0
+2026-10-01 20:03:45,707 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-01 20:03:45,707 - config - INFO - Obteniendo base inicial (131, 2)
+2026-10-01 20:03:45,707 - config - INFO - Generando capa base..
+2026-10-01 20:03:45,708 - config - INFO - 
+Cargando datos...
+2026-10-01 20:03:45,709 - config - INFO - Generando base de barrios...
+2026-10-01 20:03:45,709 - config - INFO - 
+Cargando barrios...
+2026-10-01 20:03:45,716 - config - INFO - 
+Seleccionando columnas...
+2026-10-01 20:03:45,723 - config - INFO - 
+VALIDACIÓN]
+2026-10-01 20:03:45,723 - config - INFO -   Total barrios: 131
+2026-10-01 20:03:45,724 - config - INFO -   Duplicados: 0
+2026-10-01 20:03:45,725 - config - INFO -   Nulos en barrio_id: 0
+2026-10-01 20:03:45,726 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-01 20:03:52,699 - config - INFO - Filtrando solo hostelería...
+2026-10-01 20:04:05,887 - config - INFO - Creando mapeo consolidado → base...
+2026-10-01 20:04:06,527 - config - INFO - Calculando features por barrio...
+2026-10-01 20:04:07,297 - config - INFO - ================================================================================
+2026-10-01 20:04:07,298 - config - INFO - INICIANDO PIPELINE DE MAPEO COMPLETO DE BARRIOS
+2026-10-01 20:04:07,299 - config - INFO - ================================================================================
+2026-10-01 20:04:07,300 - config - INFO - 
+CARGANDO DATASETS BASE
+2026-10-01 20:04:24,318 - config - INFO - Consolidado cargado: (8519303, 16)
+2026-10-01 20:04:24,345 - config - INFO - Catálogo de barrios cargado: (131, 6)
+2026-10-01 20:04:24,351 - config - INFO - 
+EJECUTANDO MAPEOS (FUZZY + MANUAL)
+2026-10-01 20:04:24,367 - config - ERROR - Error crítico durante las transformaciones de mapeo: No se encuentra el script requerido: src/03_feature/mapeo/_01_mapear_barrios_fuzzy.py
+Traceback (most recent call last):
+  File "c:\Users\vande\TFM\radar-barrios\src\03_feature\mapeo\03_pipeline_mapeo_barrios.py", line 82, in ejecutar_pipeline_mapeo_barrios
+    mapear_barrios_fuzzy = cargar_funcion_modulo(
+        "src/03_feature/mapeo/_01_mapear_barrios_fuzzy.py",
+        "mapear_barrios_fuzzy",
+    )
+  File "c:\Users\vande\TFM\radar-barrios\src\03_feature\mapeo\03_pipeline_mapeo_barrios.py", line 31, in cargar_funcion_modulo
+    raise FileNotFoundError(
+        f"No se encuentra el script requerido: {ruta_script}"
+    )
+FileNotFoundError: No se encuentra el script requerido: src/03_feature/mapeo/_01_mapear_barrios_fuzzy.py
+2026-10-01 20:04:32,991 - config - INFO - 
+VALIDACIÓN
+2026-10-01 20:04:32,994 - config - INFO -   Barrios: 131
+2026-10-01 20:04:32,998 - config - INFO -   Barrios con >0 bares: 130
+2026-10-01 20:04:32,999 - config - INFO -   Barrios sin bares: 1
+2026-10-01 20:04:33,010 - config - INFO -   Duplicados: 0
+2026-10-01 20:04:33,024 - config - INFO -   Nulos totales: 0
+2026-10-01 20:04:33,273 - config - INFO -  + Hostelería: (131, 12)
+2026-10-01 20:04:33,275 - config - INFO - Generando features demograficas
+2026-10-01 20:04:33,276 - config - INFO - 
+ Cargando datos...
+2026-10-01 20:04:33,515 - config - INFO - Generando base de barrios...
+2026-10-01 20:04:33,515 - config - INFO - 
+Cargando barrios...
+2026-10-01 20:04:33,527 - config - INFO - 
+Seleccionando columnas...
+2026-10-01 20:04:33,538 - config - INFO - 
+VALIDACIÓN]
+2026-10-01 20:04:33,539 - config - INFO -   Total barrios: 131
+2026-10-01 20:04:33,540 - config - INFO -   Duplicados: 0
+2026-10-01 20:04:33,541 - config - INFO -   Nulos en barrio_id: 0
+2026-10-01 20:04:33,542 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-01 20:04:33,549 - config - INFO - Preparando padrón...
+2026-10-01 20:04:34,082 - config - INFO - Agregando por barrio (barrio_id)...
+2026-10-01 20:04:34,133 - config - INFO -  Calculando features demográficos...
+2026-10-01 20:04:37,915 - config - INFO - 
+VALIDACIÓN
+2026-10-01 20:04:37,915 - config - INFO -   Barrios: 131
+2026-10-01 20:04:37,917 - config - INFO -   Población total: 3,512,849
+2026-10-01 20:04:37,918 - config - INFO -   Edad media promedio: 43.8
+2026-10-01 20:04:37,919 - config - INFO -   % Extranjeros promedio: 18.7%
+2026-10-01 20:04:37,921 - config - INFO -   Duplicados: 0
+2026-10-01 20:04:37,923 - config - INFO -   Nulos totales: 0
+2026-10-01 20:04:37,929 - config - INFO -  + Demográficos: (131, 20)
+2026-10-01 20:04:37,932 - config - INFO - 
+ Cargando datos...
+2026-10-01 20:04:37,950 - config - INFO - Generando base de barrios...
+2026-10-01 20:04:37,951 - config - INFO - 
+Cargando barrios...
+2026-10-01 20:04:37,959 - config - INFO - 
+Seleccionando columnas...
+2026-10-01 20:04:37,968 - config - INFO - 
+VALIDACIÓN]
+2026-10-01 20:04:37,969 - config - INFO -   Total barrios: 131
+2026-10-01 20:04:37,970 - config - INFO -   Duplicados: 0
+2026-10-01 20:04:37,973 - config - INFO -   Nulos en barrio_id: 0
+2026-10-01 20:04:37,975 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-01 20:04:37,978 - config - INFO - Preparando datos de renta...
+2026-10-01 20:04:37,995 - config - INFO - Seleccionando años clave...
+2026-10-01 20:04:38,130 - config - INFO - Creando mapeo barrio_id → codigo_distrito...
+2026-10-01 20:04:38,134 - config - INFO - Calculando features económicos...
+2026-10-01 20:04:38,198 - config - INFO - 
+VALIDACIÓN
+2026-10-01 20:04:38,198 - config - INFO -   Barrios: 131
+2026-10-01 20:04:38,200 - config - INFO -   Barrios con renta: 131
+2026-10-01 20:04:38,201 - config - INFO -   Renta media promedio: 29.18k
+2026-10-01 20:04:38,204 - config - INFO -   Cambio renta 2022-2026: 5.19%
+2026-10-01 20:04:38,205 - config - INFO -   Duplicados: 0
+2026-10-01 20:04:38,207 - config - INFO -   Nulos totales: 0
+2026-10-01 20:04:38,213 - config - INFO -  + Económicos: (131, 26)
+2026-10-01 20:04:38,214 - config - INFO - Generando features geografica...
+2026-10-01 20:04:38,216 - config - INFO - 
+Cargando datos...
+2026-10-01 20:04:45,503 - config - INFO - Generando base de barrios...
+2026-10-01 20:04:45,515 - config - INFO - 
+Cargando barrios...
+2026-10-01 20:04:45,832 - config - INFO - 
+Seleccionando columnas...
+2026-10-01 20:04:46,019 - config - INFO - 
+VALIDACIÓN]
+2026-10-01 20:04:46,027 - config - INFO -   Total barrios: 131
+2026-10-01 20:04:46,029 - config - INFO -   Duplicados: 0
+2026-10-01 20:04:46,034 - config - INFO -   Nulos en barrio_id: 0
+2026-10-01 20:04:46,040 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-01 20:04:46,057 - config - INFO - Preparando consolidado...
+2026-10-01 20:04:46,517 - config - INFO - Calculando centroides por barrio...
+2026-10-01 20:04:47,403 - config - INFO - Calculando features geográficos...
+2026-10-01 20:04:47,666 - config - INFO - 
+VALIDACIÓN
+2026-10-01 20:04:47,666 - config - INFO -   Barrios: 131
+2026-10-01 20:04:47,667 - config - INFO -   Distancia_centro min: 0.000 (periferia)
+2026-10-01 20:04:47,668 - config - INFO -   Distancia_centro max: 1.000 (centro)
+2026-10-01 20:04:47,668 - config - INFO -   Distancia_centro promedio: 0.839
+2026-10-01 20:04:47,669 - config - INFO -   Proximidad_metro min: 0.000
+2026-10-01 20:04:47,669 - config - INFO -   Proximidad_metro max: 1.000
+2026-10-01 20:04:47,682 - config - INFO -   Zonas únicas: 2
+2026-10-01 20:04:47,683 - config - INFO -   Duplicados: 0
+2026-10-01 20:04:47,684 - config - INFO -   Nulos: 0
+2026-10-01 20:04:47,718 - config - INFO -  + Geográficos: (131, 29)
+2026-10-01 20:04:47,719 - config - INFO - Generando target...
+2026-10-01 20:04:47,719 - config - INFO - 
+ Cargando datos...
+2026-10-01 20:04:47,719 - config - INFO - Generando base de barrios...
+2026-10-01 20:04:47,728 - config - INFO - 
+Cargando barrios...
+2026-10-01 20:04:48,066 - config - INFO - 
+Seleccionando columnas...
+2026-10-01 20:04:48,070 - config - INFO - 
+VALIDACIÓN]
+2026-10-01 20:04:48,072 - config - INFO -   Total barrios: 131
+2026-10-01 20:04:48,073 - config - INFO -   Duplicados: 0
+2026-10-01 20:04:48,075 - config - INFO -   Nulos en barrio_id: 0
+2026-10-01 20:04:48,078 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-01 20:04:48,369 - config - INFO - 
+Cargando datos...
+2026-10-01 20:04:48,369 - config - INFO - Generando base de barrios...
+2026-10-01 20:04:48,374 - config - INFO - 
+Cargando barrios...
+2026-10-01 20:04:48,382 - config - INFO - 
+Seleccionando columnas...
+2026-10-01 20:04:48,385 - config - INFO - 
+VALIDACIÓN]
+2026-10-01 20:04:48,389 - config - INFO -   Total barrios: 131
+2026-10-01 20:04:48,391 - config - INFO -   Duplicados: 0
+2026-10-01 20:04:48,393 - config - INFO -   Nulos en barrio_id: 0
+2026-10-01 20:04:48,393 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-01 20:04:52,246 - config - INFO - Filtrando solo hostelería...
+2026-10-01 20:04:58,746 - config - INFO - Creando mapeo consolidado → base...
+2026-10-01 20:04:59,208 - config - INFO - Calculando features por barrio...
+2026-10-01 20:05:05,690 - config - INFO - 
+VALIDACIÓN
+2026-10-01 20:05:05,691 - config - INFO -   Barrios: 131
+2026-10-01 20:05:05,692 - config - INFO -   Barrios con >0 bares: 130
+2026-10-01 20:05:05,693 - config - INFO -   Barrios sin bares: 1
+2026-10-01 20:05:05,695 - config - INFO -   Duplicados: 0
+2026-10-01 20:05:05,697 - config - INFO -   Nulos totales: 0
+2026-10-01 20:05:05,729 - config - INFO - 
+ Cargando datos...
+2026-10-01 20:05:05,834 - config - INFO - Generando base de barrios...
+2026-10-01 20:05:05,835 - config - INFO - 
+Cargando barrios...
+2026-10-01 20:05:05,842 - config - INFO - 
+Seleccionando columnas...
+2026-10-01 20:05:05,850 - config - INFO - 
+VALIDACIÓN]
+2026-10-01 20:05:05,851 - config - INFO -   Total barrios: 131
+2026-10-01 20:05:05,852 - config - INFO -   Duplicados: 0
+2026-10-01 20:05:05,853 - config - INFO -   Nulos en barrio_id: 0
+2026-10-01 20:05:05,860 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-01 20:05:05,864 - config - INFO - Preparando datos de renta...
+2026-10-01 20:05:05,875 - config - INFO - Seleccionando años clave...
+2026-10-01 20:05:05,948 - config - INFO - Creando mapeo barrio_id → codigo_distrito...
+2026-10-01 20:05:05,951 - config - INFO - Calculando features económicos...
+2026-10-01 20:05:06,022 - config - INFO - 
+VALIDACIÓN
+2026-10-01 20:05:06,022 - config - INFO -   Barrios: 131
+2026-10-01 20:05:06,024 - config - INFO -   Barrios con renta: 131
+2026-10-01 20:05:06,025 - config - INFO -   Renta media promedio: 29.18k
+2026-10-01 20:05:06,027 - config - INFO -   Cambio renta 2022-2026: 5.19%
+2026-10-01 20:05:06,028 - config - INFO -   Duplicados: 0
+2026-10-01 20:05:06,030 - config - INFO -   Nulos totales: 0
+2026-10-01 20:05:06,030 - config - INFO - Definiendo etiquetado manual...
+2026-10-01 20:05:06,076 - config - INFO - Creando feature target...
+2026-10-01 20:05:06,377 - config - INFO - 
+VALIDACIÓN
+2026-10-01 20:05:06,378 - config - INFO -   Barrios: 131
+2026-10-01 20:05:06,381 - config - INFO -   Gentrificados SÍ (1): 32
+2026-10-01 20:05:06,381 - config - INFO -   Gentrificados NO (0): 99
+2026-10-01 20:05:06,383 - config - INFO -   Desbalance: 24.4% SÍ
+2026-10-01 20:05:06,398 - config - INFO -   Etiquetados manualmente: 3
+2026-10-01 20:05:06,400 - config - INFO -   Etiquetados por heurística: 128
+2026-10-01 20:05:06,401 - config - INFO -   Duplicados: 0
+2026-10-01 20:05:06,402 - config - INFO -   Nulos: 0
+2026-10-01 20:05:06,417 - config - INFO -  + Target: (131, 30)
+2026-10-01 20:05:06,559 - config - INFO - Capa Gold guardada correctamente en: C:\Users\vande\TFM\data\gold_test.parquet
+2026-10-01 20:07:08,050 - config - INFO - ================================================================================
+2026-10-01 20:07:08,051 - config - INFO - INICIANDO PIPELINE DE MAPEO COMPLETO DE BARRIOS
+2026-10-01 20:07:08,051 - config - INFO - ================================================================================
+2026-10-01 20:07:08,051 - config - INFO - 
+CARGANDO DATASETS BASE
+2026-10-01 20:07:16,867 - config - INFO - Consolidado cargado: (8519303, 16)
+2026-10-01 20:07:16,877 - config - INFO - Catálogo de barrios cargado: (131, 6)
+2026-10-01 20:07:16,879 - config - INFO - 
+EJECUTANDO MAPEOS (FUZZY + MANUAL)
+2026-10-01 20:07:16,916 - config - ERROR - Error crítico durante las transformaciones de mapeo: No se encuentra el script requerido: src/03_feature/mapeo/_01_mapear_barrios_fuzzy.py
+Traceback (most recent call last):
+  File "c:\Users\vande\TFM\radar-barrios\src\03_feature\mapeo\03_pipeline_mapeo_barrios.py", line 82, in ejecutar_pipeline_mapeo_barrios
+    mapear_barrios_fuzzy = cargar_funcion_modulo(
+        "src/03_feature/mapeo/_01_mapear_barrios_fuzzy.py",
+        "mapear_barrios_fuzzy",
+    )
+  File "c:\Users\vande\TFM\radar-barrios\src\03_feature\mapeo\03_pipeline_mapeo_barrios.py", line 31, in cargar_funcion_modulo
+    raise FileNotFoundError(
+        f"No se encuentra el script requerido: {ruta_script}"
+    )
+FileNotFoundError: No se encuentra el script requerido: src/03_feature/mapeo/_01_mapear_barrios_fuzzy.py
+2026-10-01 20:08:46,003 - config - INFO - ================================================================================
+2026-10-01 20:08:46,004 - config - INFO - INICIANDO PIPELINE DE MAPEO COMPLETO DE BARRIOS
+2026-10-01 20:08:46,004 - config - INFO - ================================================================================
+2026-10-01 20:08:46,004 - config - INFO - 
+CARGANDO DATASETS BASE
+2026-10-01 20:08:52,989 - config - INFO - Consolidado cargado: (8519303, 16)
+2026-10-01 20:08:53,001 - config - INFO - Catálogo de barrios cargado: (131, 6)
+2026-10-01 20:08:53,002 - config - INFO - 
+EJECUTANDO MAPEOS (FUZZY + MANUAL)
+2026-10-01 20:08:53,181 - config - INFO - Ejecutando Fuzzy Matching...
+2026-10-01 20:08:53,182 - config - INFO - Normalizando descripciones de barrios para fuzzy matching...
+2026-10-01 20:08:55,842 - config - INFO - Ejecutando fuzzy matching (similitud >0.75)...
+
+2026-10-01 20:08:55,869 - config - INFO -  101: 'PALACIO' → SIN MATCH
+2026-10-01 20:08:55,909 - config - INFO -  102: 'EMBAJADORES' → SIN MATCH
+2026-10-01 20:08:55,938 - config - INFO -  103: 'CORTES' → SIN MATCH
+2026-10-01 20:08:55,968 - config - INFO -  104: 'JUSTICIA' → SIN MATCH
+2026-10-01 20:08:56,001 - config - INFO -  105: 'UNIVERSIDAD' → SIN MATCH
+2026-10-01 20:08:56,031 - config - INFO -  106: 'SOL' → SIN MATCH
+2026-10-01 20:08:56,056 - config - INFO -  201: 'IMPERIAL' → SIN MATCH
+2026-10-01 20:08:56,086 - config - INFO -  202: 'ACACIAS' → SIN MATCH
+2026-10-01 20:08:56,123 - config - INFO -  203: 'CHOPERA' → SIN MATCH
+2026-10-01 20:08:56,203 - config - INFO -  204: 'LEGAZPI' → SIN MATCH
+2026-10-01 20:08:56,304 - config - INFO -  205: 'DELICIAS' → SIN MATCH
+2026-10-01 20:08:56,364 - config - INFO -  206: 'PALOS DE MOGUER' → SIN MATCH
+2026-10-01 20:08:56,386 - config - INFO -  206: 'PALOS DE LA FRONTERA' → SIN MATCH
+2026-10-01 20:08:56,419 - config - INFO -  207: 'ATOCHA' → SIN MATCH
+2026-10-01 20:08:56,447 - config - INFO -  301: 'PACIFICO' → SIN MATCH
+2026-10-01 20:08:56,468 - config - INFO -  302: 'ADELFAS' → SIN MATCH
+2026-10-01 20:08:56,493 - config - INFO -  303: 'ESTRELLA' → SIN MATCH
+2026-10-01 20:08:56,515 - config - INFO -  304: 'IBIZA' → SIN MATCH
+2026-10-01 20:08:56,546 - config - INFO -  305: 'LOS JERONIMOS' → SIN MATCH
+2026-10-01 20:08:56,564 - config - INFO -  306: 'NINO JESUS' → SIN MATCH
+2026-10-01 20:08:56,586 - config - INFO -  401: 'RECOLETOS' → SIN MATCH
+2026-10-01 20:08:56,603 - config - INFO -  402: 'GOYA' → SIN MATCH
+2026-10-01 20:08:56,628 - config - INFO -  403: 'FUENTE DEL BERRO' → SIN MATCH
+2026-10-01 20:08:56,648 - config - INFO -  404: 'GUINDALERA' → SIN MATCH
+2026-10-01 20:08:56,663 - config - INFO -  405: 'LISTA' → SIN MATCH
+2026-10-01 20:08:56,681 - config - INFO -  406: 'CASTELLANA' → SIN MATCH
+2026-10-01 20:08:56,697 - config - INFO -  501: 'EL VISO' → SIN MATCH
+2026-10-01 20:08:56,716 - config - INFO -  502: 'PROSPERIDAD' → SIN MATCH
+2026-10-01 20:08:56,736 - config - INFO -  503: 'CIUDAD JARDIN' → SIN MATCH
+2026-10-01 20:08:56,787 - config - INFO -  504: 'HISPANOAMERICA' → SIN MATCH
+2026-10-01 20:08:56,827 - config - INFO -  505: 'NUEVA ESPANA' → SIN MATCH
+2026-10-01 20:08:56,850 - config - INFO -  506: 'CASTILLA' → SIN MATCH
+2026-10-01 20:08:56,884 - config - INFO -  601: 'BELLAS VISTAS' → SIN MATCH
+2026-10-01 20:08:56,913 - config - INFO -  602: 'CUATRO CAMINOS' → SIN MATCH
+2026-10-01 20:08:56,940 - config - INFO -  603: 'CASTILLEJOS' → SIN MATCH
+2026-10-01 20:08:56,962 - config - INFO -  604: 'ALMENARA' → SIN MATCH
+2026-10-01 20:08:56,999 - config - INFO -  605: 'VALDEACEDERAS' → SIN MATCH
+2026-10-01 20:08:57,025 - config - INFO -  606: 'BERRUGUETE' → SIN MATCH
+2026-10-01 20:08:57,056 - config - INFO -  701: 'GAZTAMBIDE' → SIN MATCH
+2026-10-01 20:08:57,090 - config - INFO -  702: 'ARAPILES' → SIN MATCH
+2026-10-01 20:08:57,121 - config - INFO -  703: 'TRAFALGAR' → SIN MATCH
+2026-10-01 20:08:57,154 - config - INFO -  704: 'ALMAGRO' → SIN MATCH
+2026-10-01 20:08:57,177 - config - INFO -  705: 'RIOS ROSAS' → SIN MATCH
+2026-10-01 20:08:57,202 - config - INFO -  706: 'VALLEHERMOSO' → SIN MATCH
+2026-10-01 20:08:57,226 - config - INFO -  801: 'EL PARDO' → SIN MATCH
+2026-10-01 20:08:57,255 - config - INFO -  802: 'FUENTELARREINA' → SIN MATCH
+2026-10-01 20:08:57,293 - config - INFO -  803: 'PENA GRANDE' → SIN MATCH
+2026-10-01 20:08:57,314 - config - INFO -  804: 'EL PILAR' → SIN MATCH
+2026-10-01 20:08:57,332 - config - INFO -  805: 'LA PAZ' → SIN MATCH
+2026-10-01 20:08:57,366 - config - INFO -  806: 'VALVERDE' → SIN MATCH
+2026-10-01 20:08:57,398 - config - INFO -  807: 'MIRASIERRA' → SIN MATCH
+2026-10-01 20:08:57,419 - config - INFO -  808: 'EL GOLOSO' → SIN MATCH
+2026-10-01 20:08:57,442 - config - INFO -  901: 'CASA DE CAMPO' → SIN MATCH
+2026-10-01 20:08:57,468 - config - INFO -  902: 'ARGUELLES' → SIN MATCH
+2026-10-01 20:08:57,499 - config - INFO -  903: 'CIUDAD UNIVERSITARIA' → SIN MATCH
+2026-10-01 20:08:57,519 - config - INFO -  904: 'VALDEZARZA' → SIN MATCH
+2026-10-01 20:08:57,546 - config - INFO -  905: 'VALDEMARIN' → SIN MATCH
+2026-10-01 20:08:57,566 - config - INFO -  906: 'EL PLANTIO' → SIN MATCH
+2026-10-01 20:08:57,592 - config - INFO -  907: 'ARAVACA' → SIN MATCH
+2026-10-01 20:08:57,618 - config - INFO -  1001: 'LOS CARMENES' → SIN MATCH
+2026-10-01 20:08:57,643 - config - INFO -  1002: 'PUERTA DEL ANGEL' → SIN MATCH
+2026-10-01 20:08:57,664 - config - INFO -  1003: 'LUCERO' → SIN MATCH
+2026-10-01 20:08:57,689 - config - INFO -  1004: 'ALUCHE' → SIN MATCH
+2026-10-01 20:08:57,716 - config - INFO -  1005: 'CAMPAMENTO' → SIN MATCH
+2026-10-01 20:08:57,739 - config - INFO -  1006: 'CUATRO VIENTOS' → SIN MATCH
+2026-10-01 20:08:57,763 - config - INFO -  1007: 'LAS AGUILAS' → SIN MATCH
+2026-10-01 20:08:57,783 - config - INFO -  1101: 'COMILLAS' → SIN MATCH
+2026-10-01 20:08:57,806 - config - INFO -  1102: 'OPANEL' → SIN MATCH
+2026-10-01 20:08:57,829 - config - INFO -  1103: 'SAN ISIDRO' → SIN MATCH
+2026-10-01 20:08:57,859 - config - INFO -  1104: 'VISTA ALEGRE' → SIN MATCH
+2026-10-01 20:08:57,883 - config - INFO -  1105: 'PUERTA BONITA' → SIN MATCH
+2026-10-01 20:08:57,911 - config - INFO -  1106: 'BUENAVISTA' → SIN MATCH
+2026-10-01 20:08:57,934 - config - INFO -  1107: 'ABRANTES' → SIN MATCH
+2026-10-01 20:08:57,956 - config - INFO -  1201: 'ORCASITAS' → SIN MATCH
+2026-10-01 20:08:57,975 - config - INFO -  1202: 'ORCASUR' → SIN MATCH
+2026-10-01 20:08:57,997 - config - INFO -  1203: 'SAN FERMIN' → SIN MATCH
+2026-10-01 20:08:58,030 - config - INFO -  1204: 'ALMENDRALES' → SIN MATCH
+2026-10-01 20:08:58,079 - config - INFO -  1205: 'MOSCARDO' → SIN MATCH
+2026-10-01 20:08:58,116 - config - INFO -  1206: 'ZOFIO' → SIN MATCH
+2026-10-01 20:08:58,154 - config - INFO -  1207: 'PRADOLONGO' → SIN MATCH
+2026-10-01 20:08:58,180 - config - INFO -  1301: 'ENTREVIAS' → SIN MATCH
+2026-10-01 20:08:58,199 - config - INFO -  1302: 'SAN DIEGO' → SIN MATCH
+2026-10-01 20:08:58,228 - config - INFO -  1303: 'PALOMERAS BAJAS' → SIN MATCH
+2026-10-01 20:08:58,252 - config - INFO -  1304: 'PALOMERAS SURESTE' → SIN MATCH
+2026-10-01 20:08:58,282 - config - INFO -  1305: 'PORTAZGO' → SIN MATCH
+2026-10-01 20:08:58,313 - config - INFO -  1306: 'NUMANCIA' → SIN MATCH
+2026-10-01 20:08:58,334 - config - INFO -  1401: 'PAVONES' → SIN MATCH
+2026-10-01 20:08:58,360 - config - INFO -  1402: 'HORCAJO' → SIN MATCH
+2026-10-01 20:08:58,385 - config - INFO -  1403: 'MARROQUINA' → SIN MATCH
+2026-10-01 20:08:58,411 - config - INFO -  1404: 'MEDIA LEGUA' → SIN MATCH
+2026-10-01 20:08:58,433 - config - INFO -  1405: 'FONTARRON' → SIN MATCH
+2026-10-01 20:08:58,466 - config - INFO -  1406: 'VINATEROS' → SIN MATCH
+2026-10-01 20:08:58,494 - config - INFO -  1501: 'VENTAS' → SIN MATCH
+2026-10-01 20:08:58,523 - config - INFO -  1502: 'PUEBLO NUEVO' → SIN MATCH
+2026-10-01 20:08:58,543 - config - INFO -  1503: 'QUINTANA' → SIN MATCH
+2026-10-01 20:08:58,558 - config - INFO -  1504: 'CONCEPCION' → SIN MATCH
+2026-10-01 20:08:58,580 - config - INFO -  1505: 'SAN PASCUAL' → SIN MATCH
+2026-10-01 20:08:58,602 - config - INFO -  1506: 'SAN JUAN BAUTISTA' → SIN MATCH
+2026-10-01 20:08:58,629 - config - INFO -  1507: 'COLINA' → SIN MATCH
+2026-10-01 20:08:58,649 - config - INFO -  1508: 'ATALAYA' → SIN MATCH
+2026-10-01 20:08:58,671 - config - INFO -  1509: 'COSTILLARES' → SIN MATCH
+2026-10-01 20:08:58,693 - config - INFO -  1601: 'PALOMAS' → SIN MATCH
+2026-10-01 20:08:58,716 - config - INFO -  1602: 'PIOVERA' → SIN MATCH
+2026-10-01 20:08:58,745 - config - INFO -  1603: 'CANILLAS' → SIN MATCH
+2026-10-01 20:08:58,767 - config - INFO -  1604: 'PINAR DEL REY' → SIN MATCH
+2026-10-01 20:08:58,793 - config - INFO -  1605: 'APOSTOL SANTIAGO' → SIN MATCH
+2026-10-01 20:08:58,818 - config - INFO -  1606: 'VALDEFUENTES' → SIN MATCH
+2026-10-01 20:08:58,844 - config - INFO -  1701: 'SAN ANDRES' → SIN MATCH
+2026-10-01 20:08:58,866 - config - INFO -  1702: 'SAN CRISTOBAL' → SIN MATCH
+2026-10-01 20:08:58,966 - config - INFO -  1703: 'BUTARQUE' → SIN MATCH
+2026-10-01 20:08:58,995 - config - INFO -  1704: 'LOS ROSALES' → SIN MATCH
+2026-10-01 20:08:59,013 - config - INFO -  1705: 'LOS ANGELES' → SIN MATCH
+2026-10-01 20:08:59,029 - config - INFO -  1801: 'CASCO H.VALLECAS' → SIN MATCH
+2026-10-01 20:08:59,047 - config - INFO -  1802: 'SANTA EUGENIA' → SIN MATCH
+2026-10-01 20:08:59,066 - config - INFO -  1803: 'ENSANCHE DE VALLECAS' → SIN MATCH
+2026-10-01 20:08:59,088 - config - INFO -  1901: 'CASCO H.VICALVARO' → SIN MATCH
+2026-10-01 20:08:59,112 - config - INFO -  1902: 'VALDEBERNARDO' → SIN MATCH
+2026-10-01 20:08:59,141 - config - INFO -  1903: 'VALDERRIVAS' → SIN MATCH
+2026-10-01 20:08:59,166 - config - INFO -  1904: 'EL CANAVERAL' → SIN MATCH
+2026-10-01 20:08:59,185 - config - INFO -  2001: 'SIMANCAS' → SIN MATCH
+2026-10-01 20:08:59,204 - config - INFO -  2002: 'HELLIN' → SIN MATCH
+2026-10-01 20:08:59,229 - config - INFO -  2003: 'AMPOSTA' → SIN MATCH
+2026-10-01 20:08:59,251 - config - INFO -  2004: 'ARCOS' → SIN MATCH
+2026-10-01 20:08:59,279 - config - INFO -  2005: 'ROSAS' → SIN MATCH
+2026-10-01 20:08:59,300 - config - INFO -  2006: 'REJAS' → SIN MATCH
+2026-10-01 20:08:59,341 - config - INFO -  2007: 'CANILLEJAS' → SIN MATCH
+2026-10-01 20:08:59,365 - config - INFO -  2008: 'EL SALVADOR' → SIN MATCH
+2026-10-01 20:08:59,394 - config - INFO -  2101: 'ALAMEDA DE OSUNA' → SIN MATCH
+2026-10-01 20:08:59,424 - config - INFO -  2102: 'AEROPUERTO' → SIN MATCH
+2026-10-01 20:08:59,517 - config - INFO -  2103: 'CASCO H.BARAJAS' → SIN MATCH
+2026-10-01 20:08:59,557 - config - INFO -  2104: 'TIMON' → SIN MATCH
+2026-10-01 20:08:59,579 - config - INFO -  2105: 'CORRALEJOS' → SIN MATCH
+2026-10-01 20:08:59,582 - config - INFO - Agregando Mapeos Manuales...
+2026-10-01 20:08:59,583 - config - INFO - 
+ Combinando fuzzy + manual...
+2026-10-01 20:08:59,585 - config - INFO -  Agregado: 1901 → 191
+2026-10-01 20:08:59,586 - config - INFO -  Agregado: 1801 → 181
+2026-10-01 20:08:59,586 - config - INFO -  Agregado: 2103 → 213
+2026-10-01 20:08:59,587 - config - INFO -  Agregado: 1701 → 165
+2026-10-01 20:08:59,598 - config - INFO -  Cobertura perfecta: 131 barrios mapeados correctamente.
+2026-10-01 20:08:59,598 - config - INFO - 
+GUARDANDO ARCHIVO FINAL MAPEO BARRIOS
+2026-10-01 20:08:59,679 - config - INFO -  Archivo final generado exitosamente en: C:\Users\vande\TFM\data\gold\mapeo_barrios_final.parquet
+2026-10-01 20:08:59,679 - config - INFO - ================================================================================
+2026-10-01 20:08:59,679 - config - INFO - PIPELINE DE MAPEO COMPLETADO EXITOSAMENTE
+2026-10-01 20:08:59,680 - config - INFO - Tiempo total de ejecución: 13.68 segundos
+2026-10-01 20:08:59,680 - config - INFO -  Total Mappings generados: 131
+2026-10-01 20:08:59,680 - config - INFO - ================================================================================
+2026-10-01 20:09:17,384 - config - INFO - Generando base de barrios...
+2026-10-01 20:09:17,384 - config - INFO - 
+Cargando barrios...
+2026-10-01 20:09:17,513 - config - INFO - 
+Seleccionando columnas...
+2026-10-01 20:09:17,516 - config - INFO - 
+VALIDACIÓN]
+2026-10-01 20:09:17,517 - config - INFO -   Total barrios: 131
+2026-10-01 20:09:17,518 - config - INFO -   Duplicados: 0
+2026-10-01 20:09:17,521 - config - INFO -   Nulos en barrio_id: 0
+2026-10-01 20:09:17,523 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-01 20:09:17,524 - config - INFO - Obteniendo base inicial (131, 2)
+2026-10-01 20:09:17,525 - config - INFO - Generando capa base..
+2026-10-01 20:09:17,526 - config - INFO - 
+Cargando datos...
+2026-10-01 20:09:17,526 - config - INFO - Generando base de barrios...
+2026-10-01 20:09:17,526 - config - INFO - 
+Cargando barrios...
+2026-10-01 20:09:17,530 - config - INFO - 
+Seleccionando columnas...
+2026-10-01 20:09:17,533 - config - INFO - 
+VALIDACIÓN]
+2026-10-01 20:09:17,533 - config - INFO -   Total barrios: 131
+2026-10-01 20:09:17,534 - config - INFO -   Duplicados: 0
+2026-10-01 20:09:17,537 - config - INFO -   Nulos en barrio_id: 0
+2026-10-01 20:09:17,544 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-01 20:09:22,795 - config - INFO - Filtrando solo hostelería...
+2026-10-01 20:09:30,711 - config - INFO - Creando mapeo consolidado → base...
+2026-10-01 20:09:30,943 - config - INFO - Calculando features por barrio...
+2026-10-01 20:09:34,331 - config - INFO - 
+VALIDACIÓN
+2026-10-01 20:09:34,331 - config - INFO -   Barrios: 131
+2026-10-01 20:09:34,332 - config - INFO -   Barrios con >0 bares: 130
+2026-10-01 20:09:34,333 - config - INFO -   Barrios sin bares: 1
+2026-10-01 20:09:34,335 - config - INFO -   Duplicados: 0
+2026-10-01 20:09:34,338 - config - INFO -   Nulos totales: 0
+2026-10-01 20:09:34,390 - config - INFO -  + Hostelería: (131, 12)
+2026-10-01 20:09:34,393 - config - INFO - Generando features demograficas
+2026-10-01 20:09:34,394 - config - INFO - 
+ Cargando datos...
+2026-10-01 20:09:34,580 - config - INFO - Generando base de barrios...
+2026-10-01 20:09:34,580 - config - INFO - 
+Cargando barrios...
+2026-10-01 20:09:34,585 - config - INFO - 
+Seleccionando columnas...
+2026-10-01 20:09:34,593 - config - INFO - 
+VALIDACIÓN]
+2026-10-01 20:09:34,594 - config - INFO -   Total barrios: 131
+2026-10-01 20:09:34,595 - config - INFO -   Duplicados: 0
+2026-10-01 20:09:34,595 - config - INFO -   Nulos en barrio_id: 0
+2026-10-01 20:09:34,596 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-01 20:09:34,601 - config - INFO - Preparando padrón...
+2026-10-01 20:09:34,864 - config - INFO - Agregando por barrio (barrio_id)...
+2026-10-01 20:09:34,889 - config - INFO -  Calculando features demográficos...
+2026-10-01 20:09:37,746 - config - INFO - 
+VALIDACIÓN
+2026-10-01 20:09:37,746 - config - INFO -   Barrios: 131
+2026-10-01 20:09:37,747 - config - INFO -   Población total: 3,512,849
+2026-10-01 20:09:37,748 - config - INFO -   Edad media promedio: 43.8
+2026-10-01 20:09:37,749 - config - INFO -   % Extranjeros promedio: 18.7%
+2026-10-01 20:09:37,751 - config - INFO -   Duplicados: 0
+2026-10-01 20:09:37,752 - config - INFO -   Nulos totales: 0
+2026-10-01 20:09:37,761 - config - INFO -  + Demográficos: (131, 20)
+2026-10-01 20:09:37,761 - config - INFO - 
+ Cargando datos...
+2026-10-01 20:09:37,776 - config - INFO - Generando base de barrios...
+2026-10-01 20:09:37,777 - config - INFO - 
+Cargando barrios...
+2026-10-01 20:09:37,780 - config - INFO - 
+Seleccionando columnas...
+2026-10-01 20:09:37,785 - config - INFO - 
+VALIDACIÓN]
+2026-10-01 20:09:37,785 - config - INFO -   Total barrios: 131
+2026-10-01 20:09:37,787 - config - INFO -   Duplicados: 0
+2026-10-01 20:09:37,788 - config - INFO -   Nulos en barrio_id: 0
+2026-10-01 20:09:37,789 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-01 20:09:37,792 - config - INFO - Preparando datos de renta...
+2026-10-01 20:09:37,802 - config - INFO - Seleccionando años clave...
+2026-10-01 20:09:37,910 - config - INFO - Creando mapeo barrio_id → codigo_distrito...
+2026-10-01 20:09:37,913 - config - INFO - Calculando features económicos...
+2026-10-01 20:09:37,965 - config - INFO - 
+VALIDACIÓN
+2026-10-01 20:09:37,965 - config - INFO -   Barrios: 131
+2026-10-01 20:09:37,969 - config - INFO -   Barrios con renta: 131
+2026-10-01 20:09:37,971 - config - INFO -   Renta media promedio: 29.18k
+2026-10-01 20:09:37,974 - config - INFO -   Cambio renta 2022-2026: 5.19%
+2026-10-01 20:09:37,975 - config - INFO -   Duplicados: 0
+2026-10-01 20:09:37,976 - config - INFO -   Nulos totales: 0
+2026-10-01 20:09:37,979 - config - INFO -  + Económicos: (131, 26)
+2026-10-01 20:09:37,979 - config - INFO - Generando features geografica...
+2026-10-01 20:09:37,979 - config - INFO - 
+Cargando datos...
+2026-10-01 20:09:41,209 - config - INFO - Generando base de barrios...
+2026-10-01 20:09:41,210 - config - INFO - 
+Cargando barrios...
+2026-10-01 20:09:41,227 - config - INFO - 
+Seleccionando columnas...
+2026-10-01 20:09:41,235 - config - INFO - 
+VALIDACIÓN]
+2026-10-01 20:09:41,242 - config - INFO -   Total barrios: 131
+2026-10-01 20:09:41,243 - config - INFO -   Duplicados: 0
+2026-10-01 20:09:41,244 - config - INFO -   Nulos en barrio_id: 0
+2026-10-01 20:09:41,255 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-01 20:09:41,267 - config - INFO - Preparando consolidado...
+2026-10-01 20:09:41,833 - config - INFO - Calculando centroides por barrio...
+2026-10-01 20:09:43,074 - config - INFO - Calculando features geográficos...
+2026-10-01 20:09:43,307 - config - INFO - 
+VALIDACIÓN
+2026-10-01 20:09:43,307 - config - INFO -   Barrios: 131
+2026-10-01 20:09:43,308 - config - INFO -   Distancia_centro min: 0.000 (periferia)
+2026-10-01 20:09:43,309 - config - INFO -   Distancia_centro max: 1.000 (centro)
+2026-10-01 20:09:43,309 - config - INFO -   Distancia_centro promedio: 0.839
+2026-10-01 20:09:43,310 - config - INFO -   Proximidad_metro min: 0.000
+2026-10-01 20:09:43,313 - config - INFO -   Proximidad_metro max: 1.000
+2026-10-01 20:09:43,317 - config - INFO -   Zonas únicas: 2
+2026-10-01 20:09:43,320 - config - INFO -   Duplicados: 0
+2026-10-01 20:09:43,321 - config - INFO -   Nulos: 0
+2026-10-01 20:09:43,354 - config - INFO -  + Geográficos: (131, 29)
+2026-10-01 20:09:43,382 - config - INFO - Generando target...
+2026-10-01 20:09:43,383 - config - INFO - 
+ Cargando datos...
+2026-10-01 20:09:43,384 - config - INFO - Generando base de barrios...
+2026-10-01 20:09:43,389 - config - INFO - 
+Cargando barrios...
+2026-10-01 20:09:44,013 - config - INFO - 
+Seleccionando columnas...
+2026-10-01 20:09:44,020 - config - INFO - 
+VALIDACIÓN]
+2026-10-01 20:09:44,021 - config - INFO -   Total barrios: 131
+2026-10-01 20:09:44,025 - config - INFO -   Duplicados: 0
+2026-10-01 20:09:44,026 - config - INFO -   Nulos en barrio_id: 0
+2026-10-01 20:09:44,029 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-01 20:09:44,675 - config - INFO - 
+Cargando datos...
+2026-10-01 20:09:44,675 - config - INFO - Generando base de barrios...
+2026-10-01 20:09:44,675 - config - INFO - 
+Cargando barrios...
+2026-10-01 20:09:44,682 - config - INFO - 
+Seleccionando columnas...
+2026-10-01 20:09:44,686 - config - INFO - 
+VALIDACIÓN]
+2026-10-01 20:09:44,687 - config - INFO -   Total barrios: 131
+2026-10-01 20:09:44,687 - config - INFO -   Duplicados: 0
+2026-10-01 20:09:44,688 - config - INFO -   Nulos en barrio_id: 0
+2026-10-01 20:09:44,689 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-01 20:09:47,732 - config - INFO - Filtrando solo hostelería...
+2026-10-01 20:09:50,375 - config - INFO - Creando mapeo consolidado → base...
+2026-10-01 20:09:50,613 - config - INFO - Calculando features por barrio...
+2026-10-01 20:09:55,340 - config - INFO - 
+VALIDACIÓN
+2026-10-01 20:09:55,341 - config - INFO -   Barrios: 131
+2026-10-01 20:09:55,342 - config - INFO -   Barrios con >0 bares: 130
+2026-10-01 20:09:55,343 - config - INFO -   Barrios sin bares: 1
+2026-10-01 20:09:55,344 - config - INFO -   Duplicados: 0
+2026-10-01 20:09:55,346 - config - INFO -   Nulos totales: 0
+2026-10-01 20:09:55,375 - config - INFO - 
+ Cargando datos...
+2026-10-01 20:09:55,402 - config - INFO - Generando base de barrios...
+2026-10-01 20:09:55,402 - config - INFO - 
+Cargando barrios...
+2026-10-01 20:09:55,411 - config - INFO - 
+Seleccionando columnas...
+2026-10-01 20:09:55,414 - config - INFO - 
+VALIDACIÓN]
+2026-10-01 20:09:55,415 - config - INFO -   Total barrios: 131
+2026-10-01 20:09:55,415 - config - INFO -   Duplicados: 0
+2026-10-01 20:09:55,416 - config - INFO -   Nulos en barrio_id: 0
+2026-10-01 20:09:55,417 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-01 20:09:55,427 - config - INFO - Preparando datos de renta...
+2026-10-01 20:09:55,443 - config - INFO - Seleccionando años clave...
+2026-10-01 20:09:55,537 - config - INFO - Creando mapeo barrio_id → codigo_distrito...
+2026-10-01 20:09:55,543 - config - INFO - Calculando features económicos...
+2026-10-01 20:09:55,607 - config - INFO - 
+VALIDACIÓN
+2026-10-01 20:09:55,608 - config - INFO -   Barrios: 131
+2026-10-01 20:09:55,611 - config - INFO -   Barrios con renta: 131
+2026-10-01 20:09:55,611 - config - INFO -   Renta media promedio: 29.18k
+2026-10-01 20:09:55,612 - config - INFO -   Cambio renta 2022-2026: 5.19%
+2026-10-01 20:09:55,612 - config - INFO -   Duplicados: 0
+2026-10-01 20:09:55,613 - config - INFO -   Nulos totales: 0
+2026-10-01 20:09:55,615 - config - INFO - Definiendo etiquetado manual...
+2026-10-01 20:09:55,661 - config - INFO - Creando feature target...
+2026-10-01 20:09:55,974 - config - INFO - 
+VALIDACIÓN
+2026-10-01 20:09:55,974 - config - INFO -   Barrios: 131
+2026-10-01 20:09:55,975 - config - INFO -   Gentrificados SÍ (1): 32
+2026-10-01 20:09:55,976 - config - INFO -   Gentrificados NO (0): 99
+2026-10-01 20:09:55,977 - config - INFO -   Desbalance: 24.4% SÍ
+2026-10-01 20:09:55,996 - config - INFO -   Etiquetados manualmente: 3
+2026-10-01 20:09:55,997 - config - INFO -   Etiquetados por heurística: 128
+2026-10-01 20:09:55,998 - config - INFO -   Duplicados: 0
+2026-10-01 20:09:55,999 - config - INFO -   Nulos: 0
+2026-10-01 20:09:56,011 - config - INFO -  + Target: (131, 30)
+2026-10-01 20:09:56,080 - config - INFO - Capa Gold guardada correctamente en: C:\Users\vande\TFM\data\gold\gold_1.parquet
+2026-10-01 20:23:58,422 - config - INFO - ================================================================================
+2026-10-01 20:23:58,423 - config - INFO - INICIANDO PIPELINE DE LIMPIEZA Y ENRIQUECIMIENTO (04_ENRICHMENT)
+2026-10-01 20:23:58,423 - config - INFO - ================================================================================
+2026-10-01 20:23:58,423 - config - INFO - 
+>>> PASO 1: CARGANDO DATASET BASE DE LA CAPA GOLD
+2026-10-01 20:23:58,584 - config - INFO - Dataset cargado desde 'C:\Users\vande\TFM\data\gold\gold_1.parquet': 131 barrios × 30 columnas
+2026-10-01 20:23:58,584 - config - INFO - 
+>>> PASO 2: APLICANDO SECUENCIA DE ENRIQUECIMIENTO
+2026-10-01 20:23:58,584 - config - ERROR - Error crítico durante el enriquecimiento: No se encuentra el script requerido: src/04_enrichment/_00_cleaning_gold.py
+Traceback (most recent call last):
+  File "c:\Users\vande\TFM\radar-barrios\src\04_enrichment\_05_pipeline_enriquecimiento.py", line 99, in ejecutar_pipeline_enrichment
+    limpiar_capa_gold = cargar_funcion_modulo(
+        "src/04_enrichment/_00_cleaning_gold.py", "limpiar_capa_gold"
+    )
+  File "c:\Users\vande\TFM\radar-barrios\src\04_enrichment\_05_pipeline_enriquecimiento.py", line 24, in cargar_funcion_modulo
+    raise FileNotFoundError(
+        f"No se encuentra el script requerido: {ruta_script}"
+    )
+FileNotFoundError: No se encuentra el script requerido: src/04_enrichment/_00_cleaning_gold.py
+2026-10-01 20:24:39,021 - config - INFO - ================================================================================
+2026-10-01 20:24:39,021 - config - INFO - INICIANDO PIPELINE DE LIMPIEZA Y ENRIQUECIMIENTO (04_ENRICHMENT)
+2026-10-01 20:24:39,021 - config - INFO - ================================================================================
+2026-10-01 20:24:39,022 - config - INFO - 
+>>> PASO 1: CARGANDO DATASET BASE DE LA CAPA GOLD
+2026-10-01 20:24:39,062 - config - INFO - Dataset cargado desde 'C:\Users\vande\TFM\data\gold\gold_1.parquet': 131 barrios × 30 columnas
+2026-10-01 20:24:39,063 - config - INFO - 
+>>> PASO 2: APLICANDO SECUENCIA DE ENRIQUECIMIENTO
+2026-10-01 20:24:39,089 - config - INFO - 1/5 Limpiando registros de la capa Gold base...
+2026-10-01 20:24:39,091 - config - INFO - Identificando barrios problemáticos...
+2026-10-01 20:24:39,139 - config - INFO - 
+Eliminando features con multicolinealidad...
+2026-10-01 20:24:39,142 - config - INFO - Manejando barrios problemáticos...
+2026-10-01 20:24:39,147 - config - INFO - Barrios eliminados: 1
+2026-10-01 20:24:39,148 - config - INFO - Después de eliminar: (130, 26)
+
+2026-10-01 20:24:39,148 - config - INFO - Verificando resultado final...
+2026-10-01 20:24:39,155 - config - INFO - 2/5 Enriqueciendo Coordenadas (Latitud/Longitud)...
+2026-10-01 20:24:39,157 - config - ERROR - Error crítico durante el enriquecimiento: [Errno 2] No such file or directory: 'C:\\Users\\vande\\TFM\\data\\barrios_madrid_130_CORREGIDO.csv'
+Traceback (most recent call last):
+  File "c:\Users\vande\TFM\radar-barrios\src\04_enrichment\_05_pipeline_enriquecimiento.py", line 123, in ejecutar_pipeline_enrichment
+    df_cord_madrid = pd.read_csv(PATHS["data"]["barrios_Madrid"])
+  File "C:\Users\vande\TFM\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 872, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\vande\TFM\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\vande\TFM\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1643, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\vande\TFM\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1907, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\vande\TFM\.venv\Lib\site-packages\pandas\io\common.py", line 930, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\vande\\TFM\\data\\barrios_madrid_130_CORREGIDO.csv'
+2026-10-01 20:25:07,816 - config - INFO - ================================================================================
+2026-10-01 20:25:07,816 - config - INFO - INICIANDO PIPELINE DE LIMPIEZA Y ENRIQUECIMIENTO (04_ENRICHMENT)
+2026-10-01 20:25:07,817 - config - INFO - ================================================================================
+2026-10-01 20:25:07,817 - config - INFO - 
+>>> PASO 1: CARGANDO DATASET BASE DE LA CAPA GOLD
+2026-10-01 20:25:07,907 - config - INFO - Dataset cargado desde 'C:\Users\vande\TFM\data\gold\gold_1.parquet': 131 barrios × 30 columnas
+2026-10-01 20:25:07,908 - config - INFO - 
+>>> PASO 2: APLICANDO SECUENCIA DE ENRIQUECIMIENTO
+2026-10-01 20:25:07,921 - config - INFO - 1/5 Limpiando registros de la capa Gold base...
+2026-10-01 20:25:07,922 - config - INFO - Identificando barrios problemáticos...
+2026-10-01 20:25:07,952 - config - INFO - 
+Eliminando features con multicolinealidad...
+2026-10-01 20:25:07,954 - config - INFO - Manejando barrios problemáticos...
+2026-10-01 20:25:07,961 - config - INFO - Barrios eliminados: 1
+2026-10-01 20:25:07,962 - config - INFO - Después de eliminar: (130, 26)
+
+2026-10-01 20:25:07,962 - config - INFO - Verificando resultado final...
+2026-10-01 20:25:07,970 - config - INFO - 2/5 Enriqueciendo Coordenadas (Latitud/Longitud)...
+2026-10-01 20:25:07,972 - config - ERROR - Error crítico durante el enriquecimiento: [Errno 2] No such file or directory: 'C:\\Users\\vande\\TFM\\data\\barrios_madrid_130_CORREGIDO.csv'
+Traceback (most recent call last):
+  File "c:\Users\vande\TFM\radar-barrios\src\04_enrichment\_05_pipeline_enriquecimiento.py", line 123, in ejecutar_pipeline_enrichment
+    df_cord_madrid = pd.read_csv(PATHS["data"]["barrios_Madrid"])
+  File "C:\Users\vande\TFM\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 872, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\vande\TFM\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\vande\TFM\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1643, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\vande\TFM\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1907, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\vande\TFM\.venv\Lib\site-packages\pandas\io\common.py", line 930, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\vande\\TFM\\data\\barrios_madrid_130_CORREGIDO.csv'
+2026-10-01 20:27:17,882 - config - INFO - ================================================================================
+2026-10-01 20:27:17,883 - config - INFO - INICIANDO PIPELINE DE LIMPIEZA Y ENRIQUECIMIENTO (04_ENRICHMENT)
+2026-10-01 20:27:17,883 - config - INFO - ================================================================================
+2026-10-01 20:27:17,883 - config - INFO - 
+>>> PASO 1: CARGANDO DATASET BASE DE LA CAPA GOLD
+2026-10-01 20:27:17,954 - config - INFO - Dataset cargado desde 'C:\Users\vande\TFM\data\gold\gold_1.parquet': 131 barrios × 30 columnas
+2026-10-01 20:27:17,954 - config - INFO - 
+>>> PASO 2: APLICANDO SECUENCIA DE ENRIQUECIMIENTO
+2026-10-01 20:27:17,957 - config - INFO - 1/5 Limpiando registros de la capa Gold base...
+2026-10-01 20:27:17,958 - config - INFO - Identificando barrios problemáticos...
+2026-10-01 20:27:17,975 - config - INFO - 
+Eliminando features con multicolinealidad...
+2026-10-01 20:27:17,977 - config - INFO - Manejando barrios problemáticos...
+2026-10-01 20:27:17,979 - config - INFO - Barrios eliminados: 1
+2026-10-01 20:27:17,979 - config - INFO - Después de eliminar: (130, 26)
+
+2026-10-01 20:27:17,979 - config - INFO - Verificando resultado final...
+2026-10-01 20:27:17,983 - config - INFO - 2/5 Enriqueciendo Coordenadas (Latitud/Longitud)...
+2026-10-01 20:27:17,984 - config - ERROR - Error crítico durante el enriquecimiento: [Errno 2] No such file or directory: 'C:\\Users\\vande\\TFM\\data\\barrios_madrid_130_CORREGIDO.csv'
+Traceback (most recent call last):
+  File "c:\Users\vande\TFM\radar-barrios\src\04_enrichment\_05_pipeline_enriquecimiento.py", line 123, in ejecutar_pipeline_enrichment
+    df_cord_madrid = pd.read_csv(PATHS["data"]["barrios_Madrid"])
+  File "C:\Users\vande\TFM\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 872, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\vande\TFM\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\vande\TFM\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1643, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\vande\TFM\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1907, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\vande\TFM\.venv\Lib\site-packages\pandas\io\common.py", line 930, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\vande\\TFM\\data\\barrios_madrid_130_CORREGIDO.csv'
+2026-10-01 20:29:48,766 - config - INFO - ================================================================================
+2026-10-01 20:29:48,767 - config - INFO - INICIANDO PIPELINE DE LIMPIEZA Y ENRIQUECIMIENTO (04_ENRICHMENT)
+2026-10-01 20:29:48,767 - config - INFO - ================================================================================
+2026-10-01 20:29:48,767 - config - INFO - 
+>>> PASO 1: CARGANDO DATASET BASE DE LA CAPA GOLD
+2026-10-01 20:29:48,825 - config - INFO - Dataset cargado desde 'C:\Users\vande\TFM\data\gold\gold_1.parquet': 131 barrios × 30 columnas
+2026-10-01 20:29:48,825 - config - INFO - 
+>>> PASO 2: APLICANDO SECUENCIA DE ENRIQUECIMIENTO
+2026-10-01 20:29:48,828 - config - INFO - 1/5 Limpiando registros de la capa Gold base...
+2026-10-01 20:29:48,829 - config - INFO - Identificando barrios problemáticos...
+2026-10-01 20:29:48,842 - config - INFO - 
+Eliminando features con multicolinealidad...
+2026-10-01 20:29:48,843 - config - INFO - Manejando barrios problemáticos...
+2026-10-01 20:29:48,845 - config - INFO - Barrios eliminados: 1
+2026-10-01 20:29:48,845 - config - INFO - Después de eliminar: (130, 26)
+
+2026-10-01 20:29:48,845 - config - INFO - Verificando resultado final...
+2026-10-01 20:29:48,851 - config - INFO - 2/5 Enriqueciendo Coordenadas (Latitud/Longitud)...
+2026-10-01 20:29:48,869 - config - INFO - 3/5 Obteniendo Precios de Registradores...
+2026-10-01 20:29:48,886 - config - INFO - 4/5 Calculando Distancias y Accesibilidad a Metro...
+2026-10-01 20:29:48,891 - config - INFO - 5/5 Generando Enriquecimiento Final Gold...
+2026-10-01 20:29:48,929 - config - INFO - Dataset final guardado exitosamente en: data\gold\gold_barrios_enriquecido_test.parquet
+2026-10-01 20:29:48,929 - config - INFO - ================================================================================
+2026-10-01 20:29:48,929 - config - INFO - PIPELINE COMPLETADO EXITOSAMENTE
+2026-10-01 20:29:48,929 - config - INFO - Tiempo de ejecución: 0.16 segundos
+2026-10-01 20:29:48,929 - config - INFO - Dimensiones finales: 130 barrios × 33 columnas
+2026-10-01 20:29:48,930 - config - INFO - Nulos totales en dataset final: 0
+2026-10-01 20:29:48,930 - config - INFO - ================================================================================
+2026-10-01 20:55:56,298 - config - INFO - ================================================================================
+2026-10-01 20:55:56,298 - config - INFO - INICIANDO PIPELINE DE LIMPIEZA Y ENRIQUECIMIENTO (04_ENRICHMENT)
+2026-10-01 20:55:56,299 - config - INFO - ================================================================================
+2026-10-01 20:55:56,299 - config - INFO - 
+>>> PASO 1: CARGANDO DATASET BASE DE LA CAPA GOLD
+2026-10-01 20:55:56,490 - config - INFO - Dataset cargado desde 'C:\Users\vande\TFM\data\gold\gold_1.parquet': 131 barrios × 30 columnas
+2026-10-01 20:55:56,491 - config - INFO - 
+>>> PASO 2: APLICANDO SECUENCIA DE ENRIQUECIMIENTO
+2026-10-01 20:55:56,492 - config - ERROR - Error crítico durante el enriquecimiento: No se encuentra el script requerido: src/04_enrichment/_00_cleaning_gold.py
+Traceback (most recent call last):
+  File "c:\Users\vande\TFM\radar-barrios\src\04_enrichment\_05_pipeline_enriquecimiento.py", line 100, in ejecutar_pipeline_enrichment
+    limpiar_capa_gold = cargar_funcion_modulo(
+        "src/04_enrichment/_00_cleaning_gold.py", "limpiar_capa_gold"
+    )
+  File "c:\Users\vande\TFM\radar-barrios\src\04_enrichment\_05_pipeline_enriquecimiento.py", line 24, in cargar_funcion_modulo
+    raise FileNotFoundError(
+        f"No se encuentra el script requerido: {ruta_script}"
+    )
+FileNotFoundError: No se encuentra el script requerido: src/04_enrichment/_00_cleaning_gold.py
+2026-10-01 20:56:25,915 - config - INFO - ================================================================================
+2026-10-01 20:56:25,915 - config - INFO - INICIANDO PIPELINE DE LIMPIEZA Y ENRIQUECIMIENTO (04_ENRICHMENT)
+2026-10-01 20:56:25,916 - config - INFO - ================================================================================
+2026-10-01 20:56:25,916 - config - INFO - 
+>>> PASO 1: CARGANDO DATASET BASE DE LA CAPA GOLD
+2026-10-01 20:56:26,039 - config - INFO - Dataset cargado desde 'C:\Users\vande\TFM\data\gold\gold_1.parquet': 131 barrios × 30 columnas
+2026-10-01 20:56:26,039 - config - INFO - 
+>>> PASO 2: APLICANDO SECUENCIA DE ENRIQUECIMIENTO
+2026-10-01 20:56:26,044 - config - INFO - 1/5 Limpiando registros de la capa Gold base...
+2026-10-01 20:56:26,044 - config - INFO - Identificando barrios problemáticos...
+2026-10-01 20:56:26,074 - config - INFO - 
+Eliminando features con multicolinealidad...
+2026-10-01 20:56:26,076 - config - INFO - Manejando barrios problemáticos...
+2026-10-01 20:56:26,078 - config - INFO - Barrios eliminados: 1
+2026-10-01 20:56:26,078 - config - INFO - Después de eliminar: (130, 26)
+
+2026-10-01 20:56:26,079 - config - INFO - Verificando resultado final...
+2026-10-01 20:56:26,083 - config - INFO - 2/5 Enriqueciendo Coordenadas (Latitud/Longitud)...
+2026-10-01 20:56:26,096 - config - INFO - 3/5 Obteniendo Precios de Registradores...
+2026-10-01 20:56:26,111 - config - INFO - 4/5 Calculando Distancias y Accesibilidad a Metro...
+2026-10-01 20:56:26,113 - config - INFO - 5/5 Generando Enriquecimiento Final Gold...
+2026-10-01 20:56:26,138 - config - INFO - Dataset final guardado exitosamente en: data\gold\gold_barrios_enriquecido_test.parquet
+2026-10-01 20:56:26,138 - config - INFO - ================================================================================
+2026-10-01 20:56:26,138 - config - INFO - PIPELINE COMPLETADO EXITOSAMENTE
+2026-10-01 20:56:26,138 - config - INFO - Tiempo de ejecución: 0.22 segundos
+2026-10-01 20:56:26,138 - config - INFO - Dimensiones finales: 130 barrios × 33 columnas
+2026-10-01 20:56:26,139 - config - INFO - Nulos totales en dataset final: 0
+2026-10-01 20:56:26,139 - config - INFO - ================================================================================
+2026-10-01 21:39:07,120 - config - INFO - ================================================================================
+2026-10-01 21:39:07,121 - config - INFO - INICIANDO PIPELINE DE MAPEO COMPLETO DE BARRIOS
+2026-10-01 21:39:07,122 - config - INFO - ================================================================================
+2026-10-01 21:39:07,122 - config - INFO - 
+CARGANDO DATASETS BASE
+2026-10-01 21:39:24,591 - config - INFO - Consolidado cargado: (8519303, 16)
+2026-10-01 21:39:24,606 - config - INFO - Catálogo de barrios cargado: (131, 6)
+2026-10-01 21:39:24,608 - config - INFO - 
+EJECUTANDO MAPEOS (FUZZY + MANUAL)
+2026-10-01 21:39:24,636 - config - ERROR - Error crítico durante las transformaciones de mapeo: No se encuentra el script requerido: src/03_feature/mapeo/_01_mapear_barrios_fuzzy.py
+Traceback (most recent call last):
+  File "c:\Users\vande\TFM\radar-barrios\src\03_feature\mapeo\03_pipeline_mapeo_barrios.py", line 82, in ejecutar_pipeline_mapeo_barrios
+    mapear_barrios_fuzzy = cargar_funcion_modulo(
+        "src/03_feature/mapeo/_01_mapear_barrios_fuzzy.py",
+        "mapear_barrios_fuzzy",
+    )
+  File "c:\Users\vande\TFM\radar-barrios\src\03_feature\mapeo\03_pipeline_mapeo_barrios.py", line 31, in cargar_funcion_modulo
+    raise FileNotFoundError(
+        f"No se encuentra el script requerido: {ruta_script}"
+    )
+FileNotFoundError: No se encuentra el script requerido: src/03_feature/mapeo/_01_mapear_barrios_fuzzy.py
+2026-10-01 21:40:51,845 - config - INFO - ================================================================================
+2026-10-01 21:40:51,846 - config - INFO - INICIANDO PIPELINE DE MAPEO COMPLETO DE BARRIOS
+2026-10-01 21:40:51,847 - config - INFO - ================================================================================
+2026-10-01 21:40:51,847 - config - INFO - 
+CARGANDO DATASETS BASE
+2026-10-01 21:41:03,149 - config - INFO - Consolidado cargado: (8519303, 16)
+2026-10-01 21:41:03,186 - config - INFO - Catálogo de barrios cargado: (131, 6)
+2026-10-01 21:41:03,187 - config - INFO - 
+EJECUTANDO MAPEOS (FUZZY + MANUAL)
+2026-10-01 21:41:03,357 - config - INFO - Ejecutando Fuzzy Matching...
+2026-10-01 21:41:03,361 - config - INFO - Normalizando descripciones de barrios para fuzzy matching...
+2026-10-01 21:41:07,628 - config - INFO - Ejecutando fuzzy matching (similitud >0.75)...
+
+2026-10-01 21:41:07,679 - config - INFO -  101: 'PALACIO' → SIN MATCH
+2026-10-01 21:41:07,724 - config - INFO -  102: 'EMBAJADORES' → SIN MATCH
+2026-10-01 21:41:07,792 - config - INFO -  103: 'CORTES' → SIN MATCH
+2026-10-01 21:41:07,850 - config - INFO -  104: 'JUSTICIA' → SIN MATCH
+2026-10-01 21:41:07,907 - config - INFO -  105: 'UNIVERSIDAD' → SIN MATCH
+2026-10-01 21:41:07,953 - config - INFO -  106: 'SOL' → SIN MATCH
+2026-10-01 21:41:08,011 - config - INFO -  201: 'IMPERIAL' → SIN MATCH
+2026-10-01 21:41:08,111 - config - INFO -  202: 'ACACIAS' → SIN MATCH
+2026-10-01 21:41:08,160 - config - INFO -  203: 'CHOPERA' → SIN MATCH
+2026-10-01 21:41:08,236 - config - INFO -  204: 'LEGAZPI' → SIN MATCH
+2026-10-01 21:41:08,283 - config - INFO -  205: 'DELICIAS' → SIN MATCH
+2026-10-01 21:41:08,358 - config - INFO -  206: 'PALOS DE MOGUER' → SIN MATCH
+2026-10-01 21:41:08,422 - config - INFO -  206: 'PALOS DE LA FRONTERA' → SIN MATCH
+2026-10-01 21:41:08,456 - config - INFO -  207: 'ATOCHA' → SIN MATCH
+2026-10-01 21:41:08,515 - config - INFO -  301: 'PACIFICO' → SIN MATCH
+2026-10-01 21:41:08,617 - config - INFO -  302: 'ADELFAS' → SIN MATCH
+2026-10-01 21:41:08,694 - config - INFO -  303: 'ESTRELLA' → SIN MATCH
+2026-10-01 21:41:08,739 - config - INFO -  304: 'IBIZA' → SIN MATCH
+2026-10-01 21:41:08,838 - config - INFO -  305: 'LOS JERONIMOS' → SIN MATCH
+2026-10-01 21:41:08,873 - config - INFO -  306: 'NINO JESUS' → SIN MATCH
+2026-10-01 21:41:08,943 - config - INFO -  401: 'RECOLETOS' → SIN MATCH
+2026-10-01 21:41:08,984 - config - INFO -  402: 'GOYA' → SIN MATCH
+2026-10-01 21:41:09,019 - config - INFO -  403: 'FUENTE DEL BERRO' → SIN MATCH
+2026-10-01 21:41:09,064 - config - INFO -  404: 'GUINDALERA' → SIN MATCH
+2026-10-01 21:41:09,113 - config - INFO -  405: 'LISTA' → SIN MATCH
+2026-10-01 21:41:09,155 - config - INFO -  406: 'CASTELLANA' → SIN MATCH
+2026-10-01 21:41:09,195 - config - INFO -  501: 'EL VISO' → SIN MATCH
+2026-10-01 21:41:09,306 - config - INFO -  502: 'PROSPERIDAD' → SIN MATCH
+2026-10-01 21:41:09,362 - config - INFO -  503: 'CIUDAD JARDIN' → SIN MATCH
+2026-10-01 21:41:09,432 - config - INFO -  504: 'HISPANOAMERICA' → SIN MATCH
+2026-10-01 21:41:09,459 - config - INFO -  505: 'NUEVA ESPANA' → SIN MATCH
+2026-10-01 21:41:09,503 - config - INFO -  506: 'CASTILLA' → SIN MATCH
+2026-10-01 21:41:09,524 - config - INFO -  601: 'BELLAS VISTAS' → SIN MATCH
+2026-10-01 21:41:09,564 - config - INFO -  602: 'CUATRO CAMINOS' → SIN MATCH
+2026-10-01 21:41:09,610 - config - INFO -  603: 'CASTILLEJOS' → SIN MATCH
+2026-10-01 21:41:09,646 - config - INFO -  604: 'ALMENARA' → SIN MATCH
+2026-10-01 21:41:09,676 - config - INFO -  605: 'VALDEACEDERAS' → SIN MATCH
+2026-10-01 21:41:09,706 - config - INFO -  606: 'BERRUGUETE' → SIN MATCH
+2026-10-01 21:41:09,758 - config - INFO -  701: 'GAZTAMBIDE' → SIN MATCH
+2026-10-01 21:41:09,774 - config - INFO -  702: 'ARAPILES' → SIN MATCH
+2026-10-01 21:41:09,811 - config - INFO -  703: 'TRAFALGAR' → SIN MATCH
+2026-10-01 21:41:09,839 - config - INFO -  704: 'ALMAGRO' → SIN MATCH
+2026-10-01 21:41:09,857 - config - INFO -  705: 'RIOS ROSAS' → SIN MATCH
+2026-10-01 21:41:09,889 - config - INFO -  706: 'VALLEHERMOSO' → SIN MATCH
+2026-10-01 21:41:10,078 - config - INFO -  801: 'EL PARDO' → SIN MATCH
+2026-10-01 21:41:10,174 - config - INFO -  802: 'FUENTELARREINA' → SIN MATCH
+2026-10-01 21:41:10,369 - config - INFO -  803: 'PENA GRANDE' → SIN MATCH
+2026-10-01 21:41:10,483 - config - INFO -  804: 'EL PILAR' → SIN MATCH
+2026-10-01 21:41:10,676 - config - INFO -  805: 'LA PAZ' → SIN MATCH
+2026-10-01 21:41:10,810 - config - INFO -  806: 'VALVERDE' → SIN MATCH
+2026-10-01 21:41:10,854 - config - INFO -  807: 'MIRASIERRA' → SIN MATCH
+2026-10-01 21:41:10,893 - config - INFO -  808: 'EL GOLOSO' → SIN MATCH
+2026-10-01 21:41:10,943 - config - INFO -  901: 'CASA DE CAMPO' → SIN MATCH
+2026-10-01 21:41:10,985 - config - INFO -  902: 'ARGUELLES' → SIN MATCH
+2026-10-01 21:41:11,018 - config - INFO -  903: 'CIUDAD UNIVERSITARIA' → SIN MATCH
+2026-10-01 21:41:11,056 - config - INFO -  904: 'VALDEZARZA' → SIN MATCH
+2026-10-01 21:41:11,089 - config - INFO -  905: 'VALDEMARIN' → SIN MATCH
+2026-10-01 21:41:11,112 - config - INFO -  906: 'EL PLANTIO' → SIN MATCH
+2026-10-01 21:41:11,135 - config - INFO -  907: 'ARAVACA' → SIN MATCH
+2026-10-01 21:41:11,155 - config - INFO -  1001: 'LOS CARMENES' → SIN MATCH
+2026-10-01 21:41:11,183 - config - INFO -  1002: 'PUERTA DEL ANGEL' → SIN MATCH
+2026-10-01 21:41:11,207 - config - INFO -  1003: 'LUCERO' → SIN MATCH
+2026-10-01 21:41:11,262 - config - INFO -  1004: 'ALUCHE' → SIN MATCH
+2026-10-01 21:41:11,326 - config - INFO -  1005: 'CAMPAMENTO' → SIN MATCH
+2026-10-01 21:41:11,355 - config - INFO -  1006: 'CUATRO VIENTOS' → SIN MATCH
+2026-10-01 21:41:11,394 - config - INFO -  1007: 'LAS AGUILAS' → SIN MATCH
+2026-10-01 21:41:11,430 - config - INFO -  1101: 'COMILLAS' → SIN MATCH
+2026-10-01 21:41:11,453 - config - INFO -  1102: 'OPANEL' → SIN MATCH
+2026-10-01 21:41:11,497 - config - INFO -  1103: 'SAN ISIDRO' → SIN MATCH
+2026-10-01 21:41:11,524 - config - INFO -  1104: 'VISTA ALEGRE' → SIN MATCH
+2026-10-01 21:41:11,556 - config - INFO -  1105: 'PUERTA BONITA' → SIN MATCH
+2026-10-01 21:41:11,602 - config - INFO -  1106: 'BUENAVISTA' → SIN MATCH
+2026-10-01 21:41:11,635 - config - INFO -  1107: 'ABRANTES' → SIN MATCH
+2026-10-01 21:41:11,655 - config - INFO -  1201: 'ORCASITAS' → SIN MATCH
+2026-10-01 21:41:11,705 - config - INFO -  1202: 'ORCASUR' → SIN MATCH
+2026-10-01 21:41:11,766 - config - INFO -  1203: 'SAN FERMIN' → SIN MATCH
+2026-10-01 21:41:11,793 - config - INFO -  1204: 'ALMENDRALES' → SIN MATCH
+2026-10-01 21:41:11,840 - config - INFO -  1205: 'MOSCARDO' → SIN MATCH
+2026-10-01 21:41:11,863 - config - INFO -  1206: 'ZOFIO' → SIN MATCH
+2026-10-01 21:41:11,904 - config - INFO -  1207: 'PRADOLONGO' → SIN MATCH
+2026-10-01 21:41:11,955 - config - INFO -  1301: 'ENTREVIAS' → SIN MATCH
+2026-10-01 21:41:11,991 - config - INFO -  1302: 'SAN DIEGO' → SIN MATCH
+2026-10-01 21:41:12,028 - config - INFO -  1303: 'PALOMERAS BAJAS' → SIN MATCH
+2026-10-01 21:41:12,070 - config - INFO -  1304: 'PALOMERAS SURESTE' → SIN MATCH
+2026-10-01 21:41:12,108 - config - INFO -  1305: 'PORTAZGO' → SIN MATCH
+2026-10-01 21:41:12,152 - config - INFO -  1306: 'NUMANCIA' → SIN MATCH
+2026-10-01 21:41:12,203 - config - INFO -  1401: 'PAVONES' → SIN MATCH
+2026-10-01 21:41:12,252 - config - INFO -  1402: 'HORCAJO' → SIN MATCH
+2026-10-01 21:41:12,292 - config - INFO -  1403: 'MARROQUINA' → SIN MATCH
+2026-10-01 21:41:12,335 - config - INFO -  1404: 'MEDIA LEGUA' → SIN MATCH
+2026-10-01 21:41:12,366 - config - INFO -  1405: 'FONTARRON' → SIN MATCH
+2026-10-01 21:41:12,404 - config - INFO -  1406: 'VINATEROS' → SIN MATCH
+2026-10-01 21:41:12,447 - config - INFO -  1501: 'VENTAS' → SIN MATCH
+2026-10-01 21:41:12,480 - config - INFO -  1502: 'PUEBLO NUEVO' → SIN MATCH
+2026-10-01 21:41:12,520 - config - INFO -  1503: 'QUINTANA' → SIN MATCH
+2026-10-01 21:41:12,725 - config - INFO -  1504: 'CONCEPCION' → SIN MATCH
+2026-10-01 21:41:12,853 - config - INFO -  1505: 'SAN PASCUAL' → SIN MATCH
+2026-10-01 21:41:12,990 - config - INFO -  1506: 'SAN JUAN BAUTISTA' → SIN MATCH
+2026-10-01 21:41:13,056 - config - INFO -  1507: 'COLINA' → SIN MATCH
+2026-10-01 21:41:13,098 - config - INFO -  1508: 'ATALAYA' → SIN MATCH
+2026-10-01 21:41:13,137 - config - INFO -  1509: 'COSTILLARES' → SIN MATCH
+2026-10-01 21:41:13,168 - config - INFO -  1601: 'PALOMAS' → SIN MATCH
+2026-10-01 21:41:13,188 - config - INFO -  1602: 'PIOVERA' → SIN MATCH
+2026-10-01 21:41:13,223 - config - INFO -  1603: 'CANILLAS' → SIN MATCH
+2026-10-01 21:41:13,266 - config - INFO -  1604: 'PINAR DEL REY' → SIN MATCH
+2026-10-01 21:41:13,313 - config - INFO -  1605: 'APOSTOL SANTIAGO' → SIN MATCH
+2026-10-01 21:41:13,344 - config - INFO -  1606: 'VALDEFUENTES' → SIN MATCH
+2026-10-01 21:41:13,372 - config - INFO -  1701: 'SAN ANDRES' → SIN MATCH
+2026-10-01 21:41:13,428 - config - INFO -  1702: 'SAN CRISTOBAL' → SIN MATCH
+2026-10-01 21:41:13,446 - config - INFO -  1703: 'BUTARQUE' → SIN MATCH
+2026-10-01 21:41:13,485 - config - INFO -  1704: 'LOS ROSALES' → SIN MATCH
+2026-10-01 21:41:13,532 - config - INFO -  1705: 'LOS ANGELES' → SIN MATCH
+2026-10-01 21:41:13,600 - config - INFO -  1801: 'CASCO H.VALLECAS' → SIN MATCH
+2026-10-01 21:41:13,636 - config - INFO -  1802: 'SANTA EUGENIA' → SIN MATCH
+2026-10-01 21:41:13,680 - config - INFO -  1803: 'ENSANCHE DE VALLECAS' → SIN MATCH
+2026-10-01 21:41:13,738 - config - INFO -  1901: 'CASCO H.VICALVARO' → SIN MATCH
+2026-10-01 21:41:13,829 - config - INFO -  1902: 'VALDEBERNARDO' → SIN MATCH
+2026-10-01 21:41:13,861 - config - INFO -  1903: 'VALDERRIVAS' → SIN MATCH
+2026-10-01 21:41:13,897 - config - INFO -  1904: 'EL CANAVERAL' → SIN MATCH
+2026-10-01 21:41:13,963 - config - INFO -  2001: 'SIMANCAS' → SIN MATCH
+2026-10-01 21:41:13,983 - config - INFO -  2002: 'HELLIN' → SIN MATCH
+2026-10-01 21:41:14,013 - config - INFO -  2003: 'AMPOSTA' → SIN MATCH
+2026-10-01 21:41:14,033 - config - INFO -  2004: 'ARCOS' → SIN MATCH
+2026-10-01 21:41:14,064 - config - INFO -  2005: 'ROSAS' → SIN MATCH
+2026-10-01 21:41:14,093 - config - INFO -  2006: 'REJAS' → SIN MATCH
+2026-10-01 21:41:14,118 - config - INFO -  2007: 'CANILLEJAS' → SIN MATCH
+2026-10-01 21:41:14,152 - config - INFO -  2008: 'EL SALVADOR' → SIN MATCH
+2026-10-01 21:41:14,198 - config - INFO -  2101: 'ALAMEDA DE OSUNA' → SIN MATCH
+2026-10-01 21:41:14,228 - config - INFO -  2102: 'AEROPUERTO' → SIN MATCH
+2026-10-01 21:41:14,268 - config - INFO -  2103: 'CASCO H.BARAJAS' → SIN MATCH
+2026-10-01 21:41:14,303 - config - INFO -  2104: 'TIMON' → SIN MATCH
+2026-10-01 21:41:14,347 - config - INFO -  2105: 'CORRALEJOS' → SIN MATCH
+2026-10-01 21:41:14,365 - config - INFO - Agregando Mapeos Manuales...
+2026-10-01 21:41:14,366 - config - INFO - 
+ Combinando fuzzy + manual...
+2026-10-01 21:41:14,370 - config - INFO -  Agregado: 1901 → 191
+2026-10-01 21:41:14,372 - config - INFO -  Agregado: 1801 → 181
+2026-10-01 21:41:14,379 - config - INFO -  Agregado: 2103 → 213
+2026-10-01 21:41:14,385 - config - INFO -  Agregado: 1701 → 165
+2026-10-01 21:41:14,419 - config - INFO -  Cobertura perfecta: 131 barrios mapeados correctamente.
+2026-10-01 21:41:14,421 - config - INFO - 
+GUARDANDO ARCHIVO FINAL MAPEO BARRIOS
+2026-10-01 21:41:14,568 - config - INFO -  Archivo final generado exitosamente en: C:\Users\vande\TFM\radar-barrios\data\gold\mapeo_barrios_final.parquet
+2026-10-01 21:41:14,568 - config - INFO - ================================================================================
+2026-10-01 21:41:14,568 - config - INFO - PIPELINE DE MAPEO COMPLETADO EXITOSAMENTE
+2026-10-01 21:41:14,569 - config - INFO - Tiempo total de ejecución: 22.72 segundos
+2026-10-01 21:41:14,569 - config - INFO -  Total Mappings generados: 131
+2026-10-01 21:41:14,569 - config - INFO - ================================================================================
+2026-10-01 21:42:30,129 - config - INFO - Generando base de barrios...
+2026-10-01 21:42:30,129 - config - INFO - 
+Cargando barrios...
+2026-10-01 21:42:30,347 - config - INFO - 
+Seleccionando columnas...
+2026-10-01 21:42:30,350 - config - INFO - 
+VALIDACIÓN]
+2026-10-01 21:42:30,350 - config - INFO -   Total barrios: 131
+2026-10-01 21:42:30,351 - config - INFO -   Duplicados: 0
+2026-10-01 21:42:30,352 - config - INFO -   Nulos en barrio_id: 0
+2026-10-01 21:42:30,353 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-01 21:42:30,362 - config - INFO - Obteniendo base inicial (131, 2)
+2026-10-01 21:42:30,368 - config - INFO - Generando capa base..
+2026-10-01 21:42:30,395 - config - INFO - 
+Cargando datos...
+2026-10-01 21:42:30,397 - config - INFO - Generando base de barrios...
+2026-10-01 21:42:30,398 - config - INFO - 
+Cargando barrios...
+2026-10-01 21:42:30,410 - config - INFO - 
+Seleccionando columnas...
+2026-10-01 21:42:30,414 - config - INFO - 
+VALIDACIÓN]
+2026-10-01 21:42:30,414 - config - INFO -   Total barrios: 131
+2026-10-01 21:42:30,415 - config - INFO -   Duplicados: 0
+2026-10-01 21:42:30,415 - config - INFO -   Nulos en barrio_id: 0
+2026-10-01 21:42:30,416 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-01 21:42:43,121 - config - INFO - Filtrando solo hostelería...
+2026-10-01 21:43:00,233 - config - INFO - Creando mapeo consolidado → base...
+2026-10-01 21:43:00,635 - config - INFO - Calculando features por barrio...
+2026-10-01 21:43:07,250 - config - INFO - 
+VALIDACIÓN
+2026-10-01 21:43:07,251 - config - INFO -   Barrios: 131
+2026-10-01 21:43:07,254 - config - INFO -   Barrios con >0 bares: 130
+2026-10-01 21:43:07,255 - config - INFO -   Barrios sin bares: 1
+2026-10-01 21:43:07,260 - config - INFO -   Duplicados: 0
+2026-10-01 21:43:07,268 - config - INFO -   Nulos totales: 0
+2026-10-01 21:43:07,412 - config - INFO -  + Hostelería: (131, 12)
+2026-10-01 21:43:07,413 - config - INFO - Generando features demograficas
+2026-10-01 21:43:07,414 - config - INFO - 
+ Cargando datos...
+2026-10-01 21:43:07,552 - config - INFO - Generando base de barrios...
+2026-10-01 21:43:07,552 - config - INFO - 
+Cargando barrios...
+2026-10-01 21:43:07,559 - config - INFO - 
+Seleccionando columnas...
+2026-10-01 21:43:07,568 - config - INFO - 
+VALIDACIÓN]
+2026-10-01 21:43:07,569 - config - INFO -   Total barrios: 131
+2026-10-01 21:43:07,572 - config - INFO -   Duplicados: 0
+2026-10-01 21:43:07,573 - config - INFO -   Nulos en barrio_id: 0
+2026-10-01 21:43:07,573 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-01 21:43:07,580 - config - INFO - Preparando padrón...
+2026-10-01 21:43:07,976 - config - INFO - Agregando por barrio (barrio_id)...
+2026-10-01 21:43:08,033 - config - INFO -  Calculando features demográficos...
+2026-10-01 21:43:11,115 - config - INFO - 
+VALIDACIÓN
+2026-10-01 21:43:11,116 - config - INFO -   Barrios: 131
+2026-10-01 21:43:11,117 - config - INFO -   Población total: 3,512,849
+2026-10-01 21:43:11,118 - config - INFO -   Edad media promedio: 43.8
+2026-10-01 21:43:11,119 - config - INFO -   % Extranjeros promedio: 18.7%
+2026-10-01 21:43:11,120 - config - INFO -   Duplicados: 0
+2026-10-01 21:43:11,121 - config - INFO -   Nulos totales: 0
+2026-10-01 21:43:11,127 - config - INFO -  + Demográficos: (131, 20)
+2026-10-01 21:43:11,128 - config - INFO - 
+ Cargando datos...
+2026-10-01 21:43:11,139 - config - INFO - Generando base de barrios...
+2026-10-01 21:43:11,140 - config - INFO - 
+Cargando barrios...
+2026-10-01 21:43:11,149 - config - INFO - 
+Seleccionando columnas...
+2026-10-01 21:43:11,157 - config - INFO - 
+VALIDACIÓN]
+2026-10-01 21:43:11,158 - config - INFO -   Total barrios: 131
+2026-10-01 21:43:11,159 - config - INFO -   Duplicados: 0
+2026-10-01 21:43:11,160 - config - INFO -   Nulos en barrio_id: 0
+2026-10-01 21:43:11,161 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-01 21:43:11,163 - config - INFO - Preparando datos de renta...
+2026-10-01 21:43:11,173 - config - INFO - Seleccionando años clave...
+2026-10-01 21:43:11,299 - config - INFO - Creando mapeo barrio_id → codigo_distrito...
+2026-10-01 21:43:11,301 - config - INFO - Calculando features económicos...
+2026-10-01 21:43:11,353 - config - INFO - 
+VALIDACIÓN
+2026-10-01 21:43:11,353 - config - INFO -   Barrios: 131
+2026-10-01 21:43:11,354 - config - INFO -   Barrios con renta: 131
+2026-10-01 21:43:11,354 - config - INFO -   Renta media promedio: 29.18k
+2026-10-01 21:43:11,354 - config - INFO -   Cambio renta 2022-2026: 5.19%
+2026-10-01 21:43:11,355 - config - INFO -   Duplicados: 0
+2026-10-01 21:43:11,356 - config - INFO -   Nulos totales: 0
+2026-10-01 21:43:11,359 - config - INFO -  + Económicos: (131, 26)
+2026-10-01 21:43:11,360 - config - INFO - Generando features geografica...
+2026-10-01 21:43:11,360 - config - INFO - 
+Cargando datos...
+2026-10-01 21:43:16,483 - config - INFO - Generando base de barrios...
+2026-10-01 21:43:16,519 - config - INFO - 
+Cargando barrios...
+2026-10-01 21:43:16,957 - config - INFO - 
+Seleccionando columnas...
+2026-10-01 21:43:17,048 - config - INFO - 
+VALIDACIÓN]
+2026-10-01 21:43:17,049 - config - INFO -   Total barrios: 131
+2026-10-01 21:43:17,051 - config - INFO -   Duplicados: 0
+2026-10-01 21:43:17,052 - config - INFO -   Nulos en barrio_id: 0
+2026-10-01 21:43:17,053 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-01 21:43:17,063 - config - INFO - Preparando consolidado...
+2026-10-01 21:43:17,389 - config - INFO - Calculando centroides por barrio...
+2026-10-01 21:43:18,146 - config - INFO - Calculando features geográficos...
+2026-10-01 21:43:18,383 - config - INFO - 
+VALIDACIÓN
+2026-10-01 21:43:18,384 - config - INFO -   Barrios: 131
+2026-10-01 21:43:18,385 - config - INFO -   Distancia_centro min: 0.000 (periferia)
+2026-10-01 21:43:18,385 - config - INFO -   Distancia_centro max: 1.000 (centro)
+2026-10-01 21:43:18,386 - config - INFO -   Distancia_centro promedio: 0.839
+2026-10-01 21:43:18,387 - config - INFO -   Proximidad_metro min: 0.000
+2026-10-01 21:43:18,387 - config - INFO -   Proximidad_metro max: 1.000
+2026-10-01 21:43:18,392 - config - INFO -   Zonas únicas: 2
+2026-10-01 21:43:18,393 - config - INFO -   Duplicados: 0
+2026-10-01 21:43:18,396 - config - INFO -   Nulos: 0
+2026-10-01 21:43:18,437 - config - INFO -  + Geográficos: (131, 29)
+2026-10-01 21:43:18,437 - config - INFO - Generando target...
+2026-10-01 21:43:18,438 - config - INFO - 
+ Cargando datos...
+2026-10-01 21:43:18,438 - config - INFO - Generando base de barrios...
+2026-10-01 21:43:18,438 - config - INFO - 
+Cargando barrios...
+2026-10-01 21:43:19,045 - config - INFO - 
+Seleccionando columnas...
+2026-10-01 21:43:19,049 - config - INFO - 
+VALIDACIÓN]
+2026-10-01 21:43:19,050 - config - INFO -   Total barrios: 131
+2026-10-01 21:43:19,051 - config - INFO -   Duplicados: 0
+2026-10-01 21:43:19,051 - config - INFO -   Nulos en barrio_id: 0
+2026-10-01 21:43:19,052 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-01 21:43:19,058 - config - INFO - 
+Cargando datos...
+2026-10-01 21:43:19,058 - config - INFO - Generando base de barrios...
+2026-10-01 21:43:19,059 - config - INFO - 
+Cargando barrios...
+2026-10-01 21:43:19,066 - config - INFO - 
+Seleccionando columnas...
+2026-10-01 21:43:19,076 - config - INFO - 
+VALIDACIÓN]
+2026-10-01 21:43:19,077 - config - INFO -   Total barrios: 131
+2026-10-01 21:43:19,079 - config - INFO -   Duplicados: 0
+2026-10-01 21:43:19,080 - config - INFO -   Nulos en barrio_id: 0
+2026-10-01 21:43:19,080 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-01 21:43:22,864 - config - INFO - Filtrando solo hostelería...
+2026-10-01 21:43:26,249 - config - INFO - Creando mapeo consolidado → base...
+2026-10-01 21:43:26,788 - config - INFO - Calculando features por barrio...
+2026-10-01 21:43:30,422 - config - INFO - 
+VALIDACIÓN
+2026-10-01 21:43:30,423 - config - INFO -   Barrios: 131
+2026-10-01 21:43:30,423 - config - INFO -   Barrios con >0 bares: 130
+2026-10-01 21:43:30,424 - config - INFO -   Barrios sin bares: 1
+2026-10-01 21:43:30,425 - config - INFO -   Duplicados: 0
+2026-10-01 21:43:30,427 - config - INFO -   Nulos totales: 0
+2026-10-01 21:43:30,447 - config - INFO - 
+ Cargando datos...
+2026-10-01 21:43:30,459 - config - INFO - Generando base de barrios...
+2026-10-01 21:43:30,459 - config - INFO - 
+Cargando barrios...
+2026-10-01 21:43:30,462 - config - INFO - 
+Seleccionando columnas...
+2026-10-01 21:43:30,475 - config - INFO - 
+VALIDACIÓN]
+2026-10-01 21:43:30,475 - config - INFO -   Total barrios: 131
+2026-10-01 21:43:30,476 - config - INFO -   Duplicados: 0
+2026-10-01 21:43:30,476 - config - INFO -   Nulos en barrio_id: 0
+2026-10-01 21:43:30,477 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-01 21:43:30,478 - config - INFO - Preparando datos de renta...
+2026-10-01 21:43:30,491 - config - INFO - Seleccionando años clave...
+2026-10-01 21:43:30,757 - config - INFO - Creando mapeo barrio_id → codigo_distrito...
+2026-10-01 21:43:30,759 - config - INFO - Calculando features económicos...
+2026-10-01 21:43:30,792 - config - INFO - 
+VALIDACIÓN
+2026-10-01 21:43:30,792 - config - INFO -   Barrios: 131
+2026-10-01 21:43:30,793 - config - INFO -   Barrios con renta: 131
+2026-10-01 21:43:30,794 - config - INFO -   Renta media promedio: 29.18k
+2026-10-01 21:43:30,794 - config - INFO -   Cambio renta 2022-2026: 5.19%
+2026-10-01 21:43:30,794 - config - INFO -   Duplicados: 0
+2026-10-01 21:43:30,795 - config - INFO -   Nulos totales: 0
+2026-10-01 21:43:30,796 - config - INFO - Definiendo etiquetado manual...
+2026-10-01 21:43:30,825 - config - INFO - Creando feature target...
+2026-10-01 21:43:30,989 - config - INFO - 
+VALIDACIÓN
+2026-10-01 21:43:30,989 - config - INFO -   Barrios: 131
+2026-10-01 21:43:30,990 - config - INFO -   Gentrificados SÍ (1): 32
+2026-10-01 21:43:30,991 - config - INFO -   Gentrificados NO (0): 99
+2026-10-01 21:43:30,992 - config - INFO -   Desbalance: 24.4% SÍ
+2026-10-01 21:43:31,006 - config - INFO -   Etiquetados manualmente: 3
+2026-10-01 21:43:31,007 - config - INFO -   Etiquetados por heurística: 128
+2026-10-01 21:43:31,008 - config - INFO -   Duplicados: 0
+2026-10-01 21:43:31,009 - config - INFO -   Nulos: 0
+2026-10-01 21:43:31,020 - config - INFO -  + Target: (131, 30)
+2026-10-01 21:43:31,291 - config - INFO - Capa Gold guardada correctamente en: C:\Users\vande\TFM\radar-barrios\data\gold\gold_1.parquet
+2026-10-01 21:43:57,532 - config - INFO - ================================================================================
+2026-10-01 21:43:57,533 - config - INFO - INICIANDO PIPELINE DE LIMPIEZA Y ENRIQUECIMIENTO (04_ENRICHMENT)
+2026-10-01 21:43:57,534 - config - INFO - ================================================================================
+2026-10-01 21:43:57,534 - config - INFO - 
+>>> PASO 1: CARGANDO DATASET BASE DE LA CAPA GOLD
+2026-10-01 21:43:57,652 - config - INFO - Dataset cargado desde 'C:\Users\vande\TFM\radar-barrios\data\gold\gold_1.parquet': 131 barrios × 30 columnas
+2026-10-01 21:43:57,652 - config - INFO - 
+>>> PASO 2: APLICANDO SECUENCIA DE ENRIQUECIMIENTO
+2026-10-01 21:43:57,666 - config - INFO - 1/5 Limpiando registros de la capa Gold base...
+2026-10-01 21:43:57,667 - config - INFO - Identificando barrios problemáticos...
+2026-10-01 21:43:57,694 - config - INFO - 
+Eliminando features con multicolinealidad...
+2026-10-01 21:43:57,698 - config - INFO - Manejando barrios problemáticos...
+2026-10-01 21:43:57,701 - config - INFO - Barrios eliminados: 1
+2026-10-01 21:43:57,701 - config - INFO - Después de eliminar: (130, 26)
+
+2026-10-01 21:43:57,702 - config - INFO - Verificando resultado final...
+2026-10-01 21:43:57,713 - config - INFO - 2/5 Enriqueciendo Coordenadas (Latitud/Longitud)...
+2026-10-01 21:43:57,727 - config - INFO - 3/5 Obteniendo Precios de Registradores...
+2026-10-01 21:43:57,747 - config - INFO - 4/5 Calculando Distancias y Accesibilidad a Metro...
+2026-10-01 21:43:57,749 - config - INFO - 5/5 Generando Enriquecimiento Final Gold...
+2026-10-01 21:43:57,814 - config - INFO - Dataset final guardado exitosamente en: data\gold\gold_barrios_enriquecido_test.parquet
+2026-10-01 21:43:57,815 - config - INFO - ================================================================================
+2026-10-01 21:43:57,815 - config - INFO - PIPELINE COMPLETADO EXITOSAMENTE
+2026-10-01 21:43:57,815 - config - INFO - Tiempo de ejecución: 0.28 segundos
+2026-10-01 21:43:57,816 - config - INFO - Dimensiones finales: 130 barrios × 33 columnas
+2026-10-01 21:43:57,817 - config - INFO - Nulos totales en dataset final: 0
+2026-10-01 21:43:57,818 - config - INFO - ================================================================================
+2026-10-01 21:47:12,759 - config - INFO - ================================================================================
+2026-10-01 21:47:12,761 - config - INFO - INICIANDO PIPELINE DE LIMPIEZA Y ENRIQUECIMIENTO (04_ENRICHMENT)
+2026-10-01 21:47:12,762 - config - INFO - ================================================================================
+2026-10-01 21:47:12,762 - config - INFO - 
+>>> PASO 1: CARGANDO DATASET BASE DE LA CAPA GOLD
+2026-10-01 21:47:12,830 - config - INFO - Dataset cargado desde 'C:\Users\vande\TFM\radar-barrios\data\gold\gold_1.parquet': 131 barrios × 30 columnas
+2026-10-01 21:47:12,830 - config - INFO - 
+>>> PASO 2: APLICANDO SECUENCIA DE ENRIQUECIMIENTO
+2026-10-01 21:47:12,831 - config - ERROR - Error crítico durante el enriquecimiento: No se encuentra el script requerido: src/04_enrichment/_00_cleaning_gold.py
+Traceback (most recent call last):
+  File "c:\Users\vande\TFM\radar-barrios\src\04_enrichment\_05_pipeline_enriquecimiento.py", line 100, in ejecutar_pipeline_enrichment
+    limpiar_capa_gold = cargar_funcion_modulo(
+        "src/04_enrichment/_00_cleaning_gold.py", "limpiar_capa_gold"
+    )
+  File "c:\Users\vande\TFM\radar-barrios\src\04_enrichment\_05_pipeline_enriquecimiento.py", line 24, in cargar_funcion_modulo
+    raise FileNotFoundError(
+        f"No se encuentra el script requerido: {ruta_script}"
+    )
+FileNotFoundError: No se encuentra el script requerido: src/04_enrichment/_00_cleaning_gold.py
+2026-10-01 21:47:39,464 - config - INFO - ================================================================================
+2026-10-01 21:47:39,486 - config - INFO - INICIANDO PIPELINE DE LIMPIEZA Y ENRIQUECIMIENTO (04_ENRICHMENT)
+2026-10-01 21:47:39,498 - config - INFO - ================================================================================
+2026-10-01 21:47:39,502 - config - INFO - 
+>>> PASO 1: CARGANDO DATASET BASE DE LA CAPA GOLD
+2026-10-01 21:47:39,593 - config - INFO - Dataset cargado desde 'C:\Users\vande\TFM\radar-barrios\data\gold\gold_1.parquet': 131 barrios × 30 columnas
+2026-10-01 21:47:39,594 - config - INFO - 
+>>> PASO 2: APLICANDO SECUENCIA DE ENRIQUECIMIENTO
+2026-10-01 21:47:39,609 - config - INFO - 1/5 Limpiando registros de la capa Gold base...
+2026-10-01 21:47:39,611 - config - INFO - Identificando barrios problemáticos...
+2026-10-01 21:47:39,762 - config - INFO - 
+Eliminando features con multicolinealidad...
+2026-10-01 21:47:39,769 - config - INFO - Manejando barrios problemáticos...
+2026-10-01 21:47:39,776 - config - INFO - Barrios eliminados: 1
+2026-10-01 21:47:39,777 - config - INFO - Después de eliminar: (130, 26)
+
+2026-10-01 21:47:39,777 - config - INFO - Verificando resultado final...
+2026-10-01 21:47:39,801 - config - INFO - 2/5 Enriqueciendo Coordenadas (Latitud/Longitud)...
+2026-10-01 21:47:39,834 - config - INFO - 3/5 Obteniendo Precios de Registradores...
+2026-10-01 21:47:39,892 - config - INFO - 4/5 Calculando Distancias y Accesibilidad a Metro...
+2026-10-01 21:47:39,912 - config - INFO - 5/5 Generando Enriquecimiento Final Gold...
+2026-10-01 21:47:40,055 - config - INFO - Dataset final guardado exitosamente en: C:\Users\vande\TFM\radar-barrios\data\gold\gold_barrios_enriquecido.parquet
+2026-10-01 21:47:40,056 - config - INFO - ================================================================================
+2026-10-01 21:47:40,057 - config - INFO - PIPELINE COMPLETADO EXITOSAMENTE
+2026-10-01 21:47:40,058 - config - INFO - Tiempo de ejecución: 0.59 segundos
+2026-10-01 21:47:40,058 - config - INFO - Dimensiones finales: 130 barrios × 33 columnas
+2026-10-01 21:47:40,061 - config - INFO - Nulos totales en dataset final: 0
+2026-10-01 21:47:40,061 - config - INFO - ================================================================================
+2026-10-01 21:57:18,453 - asyncio - ERROR - Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+Traceback (most recent call last):
+  File "C:\Users\vande\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vande\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] Se ha forzado la interrupción de una conexión existente por el host remoto
+2026-10-02 16:23:52,344 - config - INFO - ================================================================================
+2026-10-02 16:23:52,344 - config - INFO - INICIANDO PIPELINE DE MAPEO COMPLETO DE BARRIOS
+2026-10-02 16:23:52,344 - config - INFO - ================================================================================
+2026-10-02 16:23:52,344 - config - INFO - 
+CARGANDO DATASETS BASE
+2026-10-02 16:23:57,403 - config - INFO - Consolidado cargado: (8519303, 16)
+2026-10-02 16:23:57,409 - config - INFO - Catálogo de barrios cargado: (131, 6)
+2026-10-02 16:23:57,409 - config - INFO - 
+EJECUTANDO MAPEOS (FUZZY + MANUAL)
+2026-10-02 16:23:57,490 - config - INFO - Ejecutando Fuzzy Matching...
+2026-10-02 16:23:57,490 - config - INFO - Normalizando descripciones de barrios para fuzzy matching...
+2026-10-02 16:23:59,089 - config - INFO - Ejecutando fuzzy matching (similitud >0.75)...
+
+2026-10-02 16:23:59,102 - config - INFO -  101: 'PALACIO' → SIN MATCH
+2026-10-02 16:23:59,114 - config - INFO -  102: 'EMBAJADORES' → SIN MATCH
+2026-10-02 16:23:59,123 - config - INFO -  103: 'CORTES' → SIN MATCH
+2026-10-02 16:23:59,136 - config - INFO -  104: 'JUSTICIA' → SIN MATCH
+2026-10-02 16:23:59,148 - config - INFO -  105: 'UNIVERSIDAD' → SIN MATCH
+2026-10-02 16:23:59,159 - config - INFO -  106: 'SOL' → SIN MATCH
+2026-10-02 16:23:59,174 - config - INFO -  201: 'IMPERIAL' → SIN MATCH
+2026-10-02 16:23:59,187 - config - INFO -  202: 'ACACIAS' → SIN MATCH
+2026-10-02 16:23:59,200 - config - INFO -  203: 'CHOPERA' → SIN MATCH
+2026-10-02 16:23:59,214 - config - INFO -  204: 'LEGAZPI' → SIN MATCH
+2026-10-02 16:23:59,227 - config - INFO -  205: 'DELICIAS' → SIN MATCH
+2026-10-02 16:23:59,241 - config - INFO -  206: 'PALOS DE MOGUER' → SIN MATCH
+2026-10-02 16:23:59,260 - config - INFO -  206: 'PALOS DE LA FRONTERA' → SIN MATCH
+2026-10-02 16:23:59,271 - config - INFO -  207: 'ATOCHA' → SIN MATCH
+2026-10-02 16:23:59,285 - config - INFO -  301: 'PACIFICO' → SIN MATCH
+2026-10-02 16:23:59,295 - config - INFO -  302: 'ADELFAS' → SIN MATCH
+2026-10-02 16:23:59,306 - config - INFO -  303: 'ESTRELLA' → SIN MATCH
+2026-10-02 16:23:59,317 - config - INFO -  304: 'IBIZA' → SIN MATCH
+2026-10-02 16:23:59,331 - config - INFO -  305: 'LOS JERONIMOS' → SIN MATCH
+2026-10-02 16:23:59,344 - config - INFO -  306: 'NINO JESUS' → SIN MATCH
+2026-10-02 16:23:59,354 - config - INFO -  401: 'RECOLETOS' → SIN MATCH
+2026-10-02 16:23:59,367 - config - INFO -  402: 'GOYA' → SIN MATCH
+2026-10-02 16:23:59,382 - config - INFO -  403: 'FUENTE DEL BERRO' → SIN MATCH
+2026-10-02 16:23:59,399 - config - INFO -  404: 'GUINDALERA' → SIN MATCH
+2026-10-02 16:23:59,410 - config - INFO -  405: 'LISTA' → SIN MATCH
+2026-10-02 16:23:59,422 - config - INFO -  406: 'CASTELLANA' → SIN MATCH
+2026-10-02 16:23:59,434 - config - INFO -  501: 'EL VISO' → SIN MATCH
+2026-10-02 16:23:59,445 - config - INFO -  502: 'PROSPERIDAD' → SIN MATCH
+2026-10-02 16:23:59,455 - config - INFO -  503: 'CIUDAD JARDIN' → SIN MATCH
+2026-10-02 16:23:59,472 - config - INFO -  504: 'HISPANOAMERICA' → SIN MATCH
+2026-10-02 16:23:59,485 - config - INFO -  505: 'NUEVA ESPANA' → SIN MATCH
+2026-10-02 16:23:59,499 - config - INFO -  506: 'CASTILLA' → SIN MATCH
+2026-10-02 16:23:59,519 - config - INFO -  601: 'BELLAS VISTAS' → SIN MATCH
+2026-10-02 16:23:59,536 - config - INFO -  602: 'CUATRO CAMINOS' → SIN MATCH
+2026-10-02 16:23:59,548 - config - INFO -  603: 'CASTILLEJOS' → SIN MATCH
+2026-10-02 16:23:59,558 - config - INFO -  604: 'ALMENARA' → SIN MATCH
+2026-10-02 16:23:59,571 - config - INFO -  605: 'VALDEACEDERAS' → SIN MATCH
+2026-10-02 16:23:59,583 - config - INFO -  606: 'BERRUGUETE' → SIN MATCH
+2026-10-02 16:23:59,598 - config - INFO -  701: 'GAZTAMBIDE' → SIN MATCH
+2026-10-02 16:23:59,614 - config - INFO -  702: 'ARAPILES' → SIN MATCH
+2026-10-02 16:23:59,625 - config - INFO -  703: 'TRAFALGAR' → SIN MATCH
+2026-10-02 16:23:59,637 - config - INFO -  704: 'ALMAGRO' → SIN MATCH
+2026-10-02 16:23:59,648 - config - INFO -  705: 'RIOS ROSAS' → SIN MATCH
+2026-10-02 16:23:59,659 - config - INFO -  706: 'VALLEHERMOSO' → SIN MATCH
+2026-10-02 16:23:59,670 - config - INFO -  801: 'EL PARDO' → SIN MATCH
+2026-10-02 16:23:59,683 - config - INFO -  802: 'FUENTELARREINA' → SIN MATCH
+2026-10-02 16:23:59,694 - config - INFO -  803: 'PENA GRANDE' → SIN MATCH
+2026-10-02 16:23:59,705 - config - INFO -  804: 'EL PILAR' → SIN MATCH
+2026-10-02 16:23:59,715 - config - INFO -  805: 'LA PAZ' → SIN MATCH
+2026-10-02 16:23:59,726 - config - INFO -  806: 'VALVERDE' → SIN MATCH
+2026-10-02 16:23:59,738 - config - INFO -  807: 'MIRASIERRA' → SIN MATCH
+2026-10-02 16:23:59,754 - config - INFO -  808: 'EL GOLOSO' → SIN MATCH
+2026-10-02 16:23:59,771 - config - INFO -  901: 'CASA DE CAMPO' → SIN MATCH
+2026-10-02 16:23:59,783 - config - INFO -  902: 'ARGUELLES' → SIN MATCH
+2026-10-02 16:23:59,795 - config - INFO -  903: 'CIUDAD UNIVERSITARIA' → SIN MATCH
+2026-10-02 16:23:59,803 - config - INFO -  904: 'VALDEZARZA' → SIN MATCH
+2026-10-02 16:23:59,814 - config - INFO -  905: 'VALDEMARIN' → SIN MATCH
+2026-10-02 16:23:59,827 - config - INFO -  906: 'EL PLANTIO' → SIN MATCH
+2026-10-02 16:23:59,839 - config - INFO -  907: 'ARAVACA' → SIN MATCH
+2026-10-02 16:23:59,852 - config - INFO -  1001: 'LOS CARMENES' → SIN MATCH
+2026-10-02 16:23:59,864 - config - INFO -  1002: 'PUERTA DEL ANGEL' → SIN MATCH
+2026-10-02 16:23:59,873 - config - INFO -  1003: 'LUCERO' → SIN MATCH
+2026-10-02 16:23:59,885 - config - INFO -  1004: 'ALUCHE' → SIN MATCH
+2026-10-02 16:23:59,898 - config - INFO -  1005: 'CAMPAMENTO' → SIN MATCH
+2026-10-02 16:23:59,914 - config - INFO -  1006: 'CUATRO VIENTOS' → SIN MATCH
+2026-10-02 16:23:59,926 - config - INFO -  1007: 'LAS AGUILAS' → SIN MATCH
+2026-10-02 16:23:59,937 - config - INFO -  1101: 'COMILLAS' → SIN MATCH
+2026-10-02 16:23:59,949 - config - INFO -  1102: 'OPANEL' → SIN MATCH
+2026-10-02 16:23:59,958 - config - INFO -  1103: 'SAN ISIDRO' → SIN MATCH
+2026-10-02 16:23:59,970 - config - INFO -  1104: 'VISTA ALEGRE' → SIN MATCH
+2026-10-02 16:23:59,982 - config - INFO -  1105: 'PUERTA BONITA' → SIN MATCH
+2026-10-02 16:23:59,995 - config - INFO -  1106: 'BUENAVISTA' → SIN MATCH
+2026-10-02 16:24:00,005 - config - INFO -  1107: 'ABRANTES' → SIN MATCH
+2026-10-02 16:24:00,019 - config - INFO -  1201: 'ORCASITAS' → SIN MATCH
+2026-10-02 16:24:00,033 - config - INFO -  1202: 'ORCASUR' → SIN MATCH
+2026-10-02 16:24:00,046 - config - INFO -  1203: 'SAN FERMIN' → SIN MATCH
+2026-10-02 16:24:00,055 - config - INFO -  1204: 'ALMENDRALES' → SIN MATCH
+2026-10-02 16:24:00,064 - config - INFO -  1205: 'MOSCARDO' → SIN MATCH
+2026-10-02 16:24:00,074 - config - INFO -  1206: 'ZOFIO' → SIN MATCH
+2026-10-02 16:24:00,085 - config - INFO -  1207: 'PRADOLONGO' → SIN MATCH
+2026-10-02 16:24:00,096 - config - INFO -  1301: 'ENTREVIAS' → SIN MATCH
+2026-10-02 16:24:00,107 - config - INFO -  1302: 'SAN DIEGO' → SIN MATCH
+2026-10-02 16:24:00,117 - config - INFO -  1303: 'PALOMERAS BAJAS' → SIN MATCH
+2026-10-02 16:24:00,129 - config - INFO -  1304: 'PALOMERAS SURESTE' → SIN MATCH
+2026-10-02 16:24:00,138 - config - INFO -  1305: 'PORTAZGO' → SIN MATCH
+2026-10-02 16:24:00,147 - config - INFO -  1306: 'NUMANCIA' → SIN MATCH
+2026-10-02 16:24:00,155 - config - INFO -  1401: 'PAVONES' → SIN MATCH
+2026-10-02 16:24:00,164 - config - INFO -  1402: 'HORCAJO' → SIN MATCH
+2026-10-02 16:24:00,173 - config - INFO -  1403: 'MARROQUINA' → SIN MATCH
+2026-10-02 16:24:00,182 - config - INFO -  1404: 'MEDIA LEGUA' → SIN MATCH
+2026-10-02 16:24:00,191 - config - INFO -  1405: 'FONTARRON' → SIN MATCH
+2026-10-02 16:24:00,201 - config - INFO -  1406: 'VINATEROS' → SIN MATCH
+2026-10-02 16:24:00,210 - config - INFO -  1501: 'VENTAS' → SIN MATCH
+2026-10-02 16:24:00,218 - config - INFO -  1502: 'PUEBLO NUEVO' → SIN MATCH
+2026-10-02 16:24:00,229 - config - INFO -  1503: 'QUINTANA' → SIN MATCH
+2026-10-02 16:24:00,238 - config - INFO -  1504: 'CONCEPCION' → SIN MATCH
+2026-10-02 16:24:00,248 - config - INFO -  1505: 'SAN PASCUAL' → SIN MATCH
+2026-10-02 16:24:00,258 - config - INFO -  1506: 'SAN JUAN BAUTISTA' → SIN MATCH
+2026-10-02 16:24:00,266 - config - INFO -  1507: 'COLINA' → SIN MATCH
+2026-10-02 16:24:00,274 - config - INFO -  1508: 'ATALAYA' → SIN MATCH
+2026-10-02 16:24:00,285 - config - INFO -  1509: 'COSTILLARES' → SIN MATCH
+2026-10-02 16:24:00,295 - config - INFO -  1601: 'PALOMAS' → SIN MATCH
+2026-10-02 16:24:00,303 - config - INFO -  1602: 'PIOVERA' → SIN MATCH
+2026-10-02 16:24:00,316 - config - INFO -  1603: 'CANILLAS' → SIN MATCH
+2026-10-02 16:24:00,327 - config - INFO -  1604: 'PINAR DEL REY' → SIN MATCH
+2026-10-02 16:24:00,335 - config - INFO -  1605: 'APOSTOL SANTIAGO' → SIN MATCH
+2026-10-02 16:24:00,347 - config - INFO -  1606: 'VALDEFUENTES' → SIN MATCH
+2026-10-02 16:24:00,357 - config - INFO -  1701: 'SAN ANDRES' → SIN MATCH
+2026-10-02 16:24:00,368 - config - INFO -  1702: 'SAN CRISTOBAL' → SIN MATCH
+2026-10-02 16:24:00,378 - config - INFO -  1703: 'BUTARQUE' → SIN MATCH
+2026-10-02 16:24:00,387 - config - INFO -  1704: 'LOS ROSALES' → SIN MATCH
+2026-10-02 16:24:00,397 - config - INFO -  1705: 'LOS ANGELES' → SIN MATCH
+2026-10-02 16:24:00,409 - config - INFO -  1801: 'CASCO H.VALLECAS' → SIN MATCH
+2026-10-02 16:24:00,421 - config - INFO -  1802: 'SANTA EUGENIA' → SIN MATCH
+2026-10-02 16:24:00,441 - config - INFO -  1803: 'ENSANCHE DE VALLECAS' → SIN MATCH
+2026-10-02 16:24:00,454 - config - INFO -  1901: 'CASCO H.VICALVARO' → SIN MATCH
+2026-10-02 16:24:00,465 - config - INFO -  1902: 'VALDEBERNARDO' → SIN MATCH
+2026-10-02 16:24:00,474 - config - INFO -  1903: 'VALDERRIVAS' → SIN MATCH
+2026-10-02 16:24:00,484 - config - INFO -  1904: 'EL CANAVERAL' → SIN MATCH
+2026-10-02 16:24:00,496 - config - INFO -  2001: 'SIMANCAS' → SIN MATCH
+2026-10-02 16:24:00,506 - config - INFO -  2002: 'HELLIN' → SIN MATCH
+2026-10-02 16:24:00,516 - config - INFO -  2003: 'AMPOSTA' → SIN MATCH
+2026-10-02 16:24:00,526 - config - INFO -  2004: 'ARCOS' → SIN MATCH
+2026-10-02 16:24:00,536 - config - INFO -  2005: 'ROSAS' → SIN MATCH
+2026-10-02 16:24:00,545 - config - INFO -  2006: 'REJAS' → SIN MATCH
+2026-10-02 16:24:00,553 - config - INFO -  2007: 'CANILLEJAS' → SIN MATCH
+2026-10-02 16:24:00,563 - config - INFO -  2008: 'EL SALVADOR' → SIN MATCH
+2026-10-02 16:24:00,572 - config - INFO -  2101: 'ALAMEDA DE OSUNA' → SIN MATCH
+2026-10-02 16:24:00,582 - config - INFO -  2102: 'AEROPUERTO' → SIN MATCH
+2026-10-02 16:24:00,591 - config - INFO -  2103: 'CASCO H.BARAJAS' → SIN MATCH
+2026-10-02 16:24:00,600 - config - INFO -  2104: 'TIMON' → SIN MATCH
+2026-10-02 16:24:00,611 - config - INFO -  2105: 'CORRALEJOS' → SIN MATCH
+2026-10-02 16:24:00,616 - config - INFO - Agregando Mapeos Manuales...
+2026-10-02 16:24:00,616 - config - INFO - 
+ Combinando fuzzy + manual...
+2026-10-02 16:24:00,617 - config - INFO -  Agregado: 1901 → 191
+2026-10-02 16:24:00,618 - config - INFO -  Agregado: 1801 → 181
+2026-10-02 16:24:00,618 - config - INFO -  Agregado: 2103 → 213
+2026-10-02 16:24:00,618 - config - INFO -  Agregado: 1701 → 165
+2026-10-02 16:24:00,626 - config - INFO -  Cobertura perfecta: 131 barrios mapeados correctamente.
+2026-10-02 16:24:00,626 - config - INFO - 
+GUARDANDO ARCHIVO FINAL MAPEO BARRIOS
+2026-10-02 16:24:00,686 - config - INFO -  Archivo final generado exitosamente en: C:\Users\vande\TFM\radar-barrios\data\gold\mapeo_barrios_final.parquet
+2026-10-02 16:24:00,686 - config - INFO - ================================================================================
+2026-10-02 16:24:00,686 - config - INFO - PIPELINE DE MAPEO COMPLETADO EXITOSAMENTE
+2026-10-02 16:24:00,686 - config - INFO - Tiempo total de ejecución: 8.34 segundos
+2026-10-02 16:24:00,687 - config - INFO -  Total Mappings generados: 131
+2026-10-02 16:24:00,687 - config - INFO - ================================================================================
+2026-10-02 16:24:02,430 - config - INFO - Generando base de barrios...
+2026-10-02 16:24:02,430 - config - INFO - 
+Cargando barrios...
+2026-10-02 16:24:02,538 - config - INFO - 
+Seleccionando columnas...
+2026-10-02 16:24:02,543 - config - INFO - 
+VALIDACIÓN]
+2026-10-02 16:24:02,544 - config - INFO -   Total barrios: 131
+2026-10-02 16:24:02,544 - config - INFO -   Duplicados: 0
+2026-10-02 16:24:02,545 - config - INFO -   Nulos en barrio_id: 0
+2026-10-02 16:24:02,545 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-02 16:24:02,545 - config - INFO - Obteniendo base inicial (131, 2)
+2026-10-02 16:24:02,545 - config - INFO - Generando capa base..
+2026-10-02 16:24:02,545 - config - INFO - 
+Cargando datos...
+2026-10-02 16:24:02,545 - config - INFO - Generando base de barrios...
+2026-10-02 16:24:02,546 - config - INFO - 
+Cargando barrios...
+2026-10-02 16:24:02,549 - config - INFO - 
+Seleccionando columnas...
+2026-10-02 16:24:02,551 - config - INFO - 
+VALIDACIÓN]
+2026-10-02 16:24:02,551 - config - INFO -   Total barrios: 131
+2026-10-02 16:24:02,552 - config - INFO -   Duplicados: 0
+2026-10-02 16:24:02,552 - config - INFO -   Nulos en barrio_id: 0
+2026-10-02 16:24:02,552 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-02 16:24:08,092 - config - INFO - Filtrando solo hostelería...
+2026-10-02 16:24:12,640 - config - INFO - Creando mapeo consolidado → base...
+2026-10-02 16:24:12,819 - config - INFO - Calculando features por barrio...
+2026-10-02 16:24:17,153 - config - INFO - 
+VALIDACIÓN
+2026-10-02 16:24:17,153 - config - INFO -   Barrios: 131
+2026-10-02 16:24:17,154 - config - INFO -   Barrios con >0 bares: 130
+2026-10-02 16:24:17,155 - config - INFO -   Barrios sin bares: 1
+2026-10-02 16:24:17,156 - config - INFO -   Duplicados: 0
+2026-10-02 16:24:17,157 - config - INFO -   Nulos totales: 0
+2026-10-02 16:24:17,191 - config - INFO -  + Hostelería: (131, 12)
+2026-10-02 16:24:17,191 - config - INFO - Generando features demograficas
+2026-10-02 16:24:17,191 - config - INFO - 
+ Cargando datos...
+2026-10-02 16:24:17,230 - config - INFO - Generando base de barrios...
+2026-10-02 16:24:17,230 - config - INFO - 
+Cargando barrios...
+2026-10-02 16:24:17,235 - config - INFO - 
+Seleccionando columnas...
+2026-10-02 16:24:17,241 - config - INFO - 
+VALIDACIÓN]
+2026-10-02 16:24:17,241 - config - INFO -   Total barrios: 131
+2026-10-02 16:24:17,241 - config - INFO -   Duplicados: 0
+2026-10-02 16:24:17,242 - config - INFO -   Nulos en barrio_id: 0
+2026-10-02 16:24:17,243 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-02 16:24:17,247 - config - INFO - Preparando padrón...
+2026-10-02 16:24:17,497 - config - INFO - Agregando por barrio (barrio_id)...
+2026-10-02 16:24:17,522 - config - INFO -  Calculando features demográficos...
+2026-10-02 16:24:19,876 - config - INFO - 
+VALIDACIÓN
+2026-10-02 16:24:19,876 - config - INFO -   Barrios: 131
+2026-10-02 16:24:19,877 - config - INFO -   Población total: 3,512,849
+2026-10-02 16:24:19,877 - config - INFO -   Edad media promedio: 43.8
+2026-10-02 16:24:19,878 - config - INFO -   % Extranjeros promedio: 18.7%
+2026-10-02 16:24:19,878 - config - INFO -   Duplicados: 0
+2026-10-02 16:24:19,879 - config - INFO -   Nulos totales: 0
+2026-10-02 16:24:19,884 - config - INFO -  + Demográficos: (131, 20)
+2026-10-02 16:24:19,885 - config - INFO - 
+ Cargando datos...
+2026-10-02 16:24:19,897 - config - INFO - Generando base de barrios...
+2026-10-02 16:24:19,897 - config - INFO - 
+Cargando barrios...
+2026-10-02 16:24:19,902 - config - INFO - 
+Seleccionando columnas...
+2026-10-02 16:24:19,906 - config - INFO - 
+VALIDACIÓN]
+2026-10-02 16:24:19,907 - config - INFO -   Total barrios: 131
+2026-10-02 16:24:19,908 - config - INFO -   Duplicados: 0
+2026-10-02 16:24:19,908 - config - INFO -   Nulos en barrio_id: 0
+2026-10-02 16:24:19,909 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-02 16:24:19,909 - config - INFO - Preparando datos de renta...
+2026-10-02 16:24:19,914 - config - INFO - Seleccionando años clave...
+2026-10-02 16:24:19,984 - config - INFO - Creando mapeo barrio_id → codigo_distrito...
+2026-10-02 16:24:19,986 - config - INFO - Calculando features económicos...
+2026-10-02 16:24:20,036 - config - INFO - 
+VALIDACIÓN
+2026-10-02 16:24:20,036 - config - INFO -   Barrios: 131
+2026-10-02 16:24:20,037 - config - INFO -   Barrios con renta: 131
+2026-10-02 16:24:20,038 - config - INFO -   Renta media promedio: 29.18k
+2026-10-02 16:24:20,038 - config - INFO -   Cambio renta 2022-2026: 5.19%
+2026-10-02 16:24:20,040 - config - INFO -   Duplicados: 0
+2026-10-02 16:24:20,041 - config - INFO -   Nulos totales: 0
+2026-10-02 16:24:20,046 - config - INFO -  + Económicos: (131, 26)
+2026-10-02 16:24:20,046 - config - INFO - Generando features geografica...
+2026-10-02 16:24:20,047 - config - INFO - 
+Cargando datos...
+2026-10-02 16:24:22,549 - config - INFO - Generando base de barrios...
+2026-10-02 16:24:22,549 - config - INFO - 
+Cargando barrios...
+2026-10-02 16:24:22,557 - config - INFO - 
+Seleccionando columnas...
+2026-10-02 16:24:22,563 - config - INFO - 
+VALIDACIÓN]
+2026-10-02 16:24:22,563 - config - INFO -   Total barrios: 131
+2026-10-02 16:24:22,564 - config - INFO -   Duplicados: 0
+2026-10-02 16:24:22,565 - config - INFO -   Nulos en barrio_id: 0
+2026-10-02 16:24:22,565 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-02 16:24:22,572 - config - INFO - Preparando consolidado...
+2026-10-02 16:24:22,973 - config - INFO - Calculando centroides por barrio...
+2026-10-02 16:24:23,698 - config - INFO - Calculando features geográficos...
+2026-10-02 16:24:23,880 - config - INFO - 
+VALIDACIÓN
+2026-10-02 16:24:23,880 - config - INFO -   Barrios: 131
+2026-10-02 16:24:23,881 - config - INFO -   Distancia_centro min: 0.000 (periferia)
+2026-10-02 16:24:23,882 - config - INFO -   Distancia_centro max: 1.000 (centro)
+2026-10-02 16:24:23,882 - config - INFO -   Distancia_centro promedio: 0.839
+2026-10-02 16:24:23,882 - config - INFO -   Proximidad_metro min: 0.000
+2026-10-02 16:24:23,883 - config - INFO -   Proximidad_metro max: 1.000
+2026-10-02 16:24:23,884 - config - INFO -   Zonas únicas: 2
+2026-10-02 16:24:23,885 - config - INFO -   Duplicados: 0
+2026-10-02 16:24:23,886 - config - INFO -   Nulos: 0
+2026-10-02 16:24:23,906 - config - INFO -  + Geográficos: (131, 29)
+2026-10-02 16:24:23,906 - config - INFO - Generando target...
+2026-10-02 16:24:23,906 - config - INFO - 
+ Cargando datos...
+2026-10-02 16:24:23,906 - config - INFO - Generando base de barrios...
+2026-10-02 16:24:23,906 - config - INFO - 
+Cargando barrios...
+2026-10-02 16:24:23,914 - config - INFO - 
+Seleccionando columnas...
+2026-10-02 16:24:23,918 - config - INFO - 
+VALIDACIÓN]
+2026-10-02 16:24:23,918 - config - INFO -   Total barrios: 131
+2026-10-02 16:24:23,919 - config - INFO -   Duplicados: 0
+2026-10-02 16:24:23,920 - config - INFO -   Nulos en barrio_id: 0
+2026-10-02 16:24:23,920 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-02 16:24:23,926 - config - INFO - 
+Cargando datos...
+2026-10-02 16:24:23,926 - config - INFO - Generando base de barrios...
+2026-10-02 16:24:23,927 - config - INFO - 
+Cargando barrios...
+2026-10-02 16:24:23,933 - config - INFO - 
+Seleccionando columnas...
+2026-10-02 16:24:23,938 - config - INFO - 
+VALIDACIÓN]
+2026-10-02 16:24:23,939 - config - INFO -   Total barrios: 131
+2026-10-02 16:24:23,940 - config - INFO -   Duplicados: 0
+2026-10-02 16:24:23,940 - config - INFO -   Nulos en barrio_id: 0
+2026-10-02 16:24:23,941 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-02 16:24:26,932 - config - INFO - Filtrando solo hostelería...
+2026-10-02 16:24:28,978 - config - INFO - Creando mapeo consolidado → base...
+2026-10-02 16:24:29,074 - config - INFO - Calculando features por barrio...
+2026-10-02 16:24:31,728 - config - INFO - 
+VALIDACIÓN
+2026-10-02 16:24:31,729 - config - INFO -   Barrios: 131
+2026-10-02 16:24:31,730 - config - INFO -   Barrios con >0 bares: 130
+2026-10-02 16:24:31,730 - config - INFO -   Barrios sin bares: 1
+2026-10-02 16:24:31,731 - config - INFO -   Duplicados: 0
+2026-10-02 16:24:31,732 - config - INFO -   Nulos totales: 0
+2026-10-02 16:24:31,755 - config - INFO - 
+ Cargando datos...
+2026-10-02 16:24:31,848 - config - INFO - Generando base de barrios...
+2026-10-02 16:24:31,848 - config - INFO - 
+Cargando barrios...
+2026-10-02 16:24:31,851 - config - INFO - 
+Seleccionando columnas...
+2026-10-02 16:24:31,853 - config - INFO - 
+VALIDACIÓN]
+2026-10-02 16:24:31,853 - config - INFO -   Total barrios: 131
+2026-10-02 16:24:31,854 - config - INFO -   Duplicados: 0
+2026-10-02 16:24:31,854 - config - INFO -   Nulos en barrio_id: 0
+2026-10-02 16:24:31,854 - config - INFO -   Nulos en barrio_nombre: 0
+2026-10-02 16:24:31,855 - config - INFO - Preparando datos de renta...
+2026-10-02 16:24:31,857 - config - INFO - Seleccionando años clave...
+2026-10-02 16:24:31,881 - config - INFO - Creando mapeo barrio_id → codigo_distrito...
+2026-10-02 16:24:31,883 - config - INFO - Calculando features económicos...
+2026-10-02 16:24:31,924 - config - INFO - 
+VALIDACIÓN
+2026-10-02 16:24:31,924 - config - INFO -   Barrios: 131
+2026-10-02 16:24:31,925 - config - INFO -   Barrios con renta: 131
+2026-10-02 16:24:31,925 - config - INFO -   Renta media promedio: 29.18k
+2026-10-02 16:24:31,926 - config - INFO -   Cambio renta 2022-2026: 5.19%
+2026-10-02 16:24:31,926 - config - INFO -   Duplicados: 0
+2026-10-02 16:24:31,926 - config - INFO -   Nulos totales: 0
+2026-10-02 16:24:31,926 - config - INFO - Definiendo etiquetado manual...
+2026-10-02 16:24:31,959 - config - INFO - Creando feature target...
+2026-10-02 16:24:32,048 - config - INFO - 
+VALIDACIÓN
+2026-10-02 16:24:32,048 - config - INFO -   Barrios: 131
+2026-10-02 16:24:32,049 - config - INFO -   Gentrificados SÍ (1): 32
+2026-10-02 16:24:32,049 - config - INFO -   Gentrificados NO (0): 99
+2026-10-02 16:24:32,049 - config - INFO -   Desbalance: 24.4% SÍ
+2026-10-02 16:24:32,062 - config - INFO -   Etiquetados manualmente: 3
+2026-10-02 16:24:32,063 - config - INFO -   Etiquetados por heurística: 128
+2026-10-02 16:24:32,063 - config - INFO -   Duplicados: 0
+2026-10-02 16:24:32,064 - config - INFO -   Nulos: 0
+2026-10-02 16:24:32,068 - config - INFO -  + Target: (131, 30)
+2026-10-02 16:24:32,115 - config - INFO - Capa Gold guardada correctamente en: C:\Users\vande\TFM\radar-barrios\data\gold\gold_1.parquet

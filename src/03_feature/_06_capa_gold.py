@@ -54,7 +54,7 @@ if __name__ == "__main__":
     )
 
     # Guardar
-    output_path = PATHS['gold']['gold_test']
+    output_path = PATHS['gold']['gold_1']
     df_gold_final.to_parquet(output_path, index=False)
     logger.info(f"Capa Gold guardada correctamente en: {output_path}")
 

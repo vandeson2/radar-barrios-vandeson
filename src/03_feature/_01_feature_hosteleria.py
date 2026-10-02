@@ -16,8 +16,7 @@ def  features_hosteleria () -> pd.DataFrame:
     logger.info("\nCargando datos...")
     df_base = generar_base_barrios()
     df_consolidado = pd.read_parquet(PATHS["processed"]["cleaned"]["hosteleria_consolidado"])
-    mapeo = pd.read_parquet('data/gold/mapeo_barrios_final.parquet')
-
+    mapeo = pd.read_parquet(PATHS["gold"]["mapeo_barrios"])
 
     print(f"Consolidado: {df_consolidado.shape}")
     print(f"Mapeo: {mapeo.shape}")

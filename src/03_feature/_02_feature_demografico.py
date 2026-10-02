@@ -34,7 +34,7 @@ def features_demografico() -> pd.DataFrame:
     df_base = generar_base_barrios()
 
     #  Cargar mapeo
-    mapeo = pd.read_parquet('data\gold\mapeo_barrios_final.parquet')
+    mapeo = pd.read_parquet(PATHS["gold"]["mapeo_barrios"])
     mapeo_dict = dict(zip(mapeo['id_barrio_local'], mapeo['COD_BAR']))
 
     print(f"Mapeo: {len(mapeo_dict)} barrios\n")

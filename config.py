@@ -8,10 +8,10 @@ from typing import Dict, List
 # =============================================================================
 
 PROJECT_ROOT = Path(__file__).resolve().parent
-DATA_DIR = PROJECT_ROOT / "data"
+DATA_DIR = PROJECT_ROOT.parent / "data" if (PROJECT_ROOT.parent / "data").exists() else PROJECT_ROOT / "data"
 DATA_RAW = DATA_DIR / "raw"
 DATA_OTROS = DATA_RAW / "otros"
-DATA_PROCESSED = DATA_DIR / "processed"
+DATA_PROCESSED = DATA_DIR if (DATA_DIR / "02_cleaned").exists() else DATA_DIR / "processed"
 DATA_GOLD = DATA_DIR / "gold"
 MODELS_DIR = PROJECT_ROOT / "models"
 REPORTS_DIR = PROJECT_ROOT / "reports"
@@ -125,14 +125,11 @@ PROCESSED_PATHS ={
     "cleaned_precios": DATA_PROCESSED / "02_cleaned"/ "dataset_cleaned_precios.parquet",
     "cleaned_barrios": DATA_PROCESSED / "02_cleaned"/ "dataset_cleaned_barrios.parquet",
     "cleaned_all_years": DATA_PROCESSED / "02_cleaned" / "dataset_consolidado_all_years.parquet",
-    "gold_barrios": DATA_GOLD /  "01_base_barios.parquet",
-    "gold_hosteleria": DATA_GOLD / "gold" / "02_feature_hosteleria.parquet",
-    "gold_final": DATA_GOLD / "gold_barrios_completo_limpio.parquet"
 }   
 PATHS = {
     "data":{
         "gold_test": DATA_DIR / "gold_test.parquet",
-        "barrios_Madrid": DATA_DIR / "barrios_madrid_130_CORREGIDO.csv",
+        "barrios_Madrid": DATA_DIR / "barrios_madrid_130.csv",
         "enriquecer_precios": DATA_DIR / "datos_precios_registradores_barrios.csv",
         
     },
@@ -141,7 +138,8 @@ PATHS = {
             "hosteleria_consolidado": DATA_PROCESSED / "02_cleaned" / "dataset_consolidado_all_years.parquet",
             "barrios": DATA_PROCESSED / "02_cleaned" / "dataset_cleaned_barrios.parquet",
             "padron": DATA_PROCESSED / "02_cleaned" / "dataset_cleaned_padron.parquet",
-            "renta": DATA_PROCESSED / "02_cleaned" / "dataset_cleaned_renta.parquet"
+            "renta": DATA_PROCESSED / "02_cleaned" / "dataset_cleaned_renta.parquet",
+            "precios": DATA_PROCESSED/ "02_cleaned" / "dataset_cleaned_precios.parquet",
         },
     },
     "enrichment": {
@@ -154,11 +152,8 @@ PATHS = {
         "economico": DATA_GOLD / "04_feature_economico.parquet",
         "geografico": DATA_GOLD / "05_feature_geografico.parquet",
         "target": DATA_GOLD / "06_target.parquet",
-        "gold_1": DATA_GOLD / "gold_barrios_completo.parquet",
-        "gol_2": DATA_GOLD / "gold_barrios_completo_limpio.parquet",
-        "gold_3": DATA_GOLD / "gold_barrios_con_coordenadas.parquet",
         "gold_final": DATA_GOLD / "gold_barrios_enriquecido.parquet",
-        "gold_test": DATA_GOLD / "gold_test.parquet",
+        "gold_1": DATA_GOLD / "gold_1.parquet",
         "mapeo_barrios": DATA_GOLD / "mapeo_barrios_final.parquet"
     },
     

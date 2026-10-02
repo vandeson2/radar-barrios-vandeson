@@ -1,0 +1,13 @@
+[15:59:53] INFO - ================================================================================
+[15:59:53] INFO - PIPELINE MAESTRO - RADAR DE BARRIO
+[15:59:53] INFO - ================================================================================
+[15:59:53] INFO - Raíz: C:\Users\vande\TFM\radar-barrios
+[15:59:53] INFO - Log: C:\Users\vande\TFM\radar-barrios\logs\pipeline_maestro_20261002_155953.log
+[15:59:53] INFO - 
+================================================================================
+[15:59:53] INFO - STAGE 8: Ejecutar dashboard Streamlit
+[15:59:53] INFO - ================================================================================
+[15:59:53] INFO - App: app.py
+[15:59:53] INFO - URL: http://localhost:8501
+[15:59:53] INFO - (Presiona Ctrl+C para detener)
+[16:22:52] INFO - Dashboard detenido por usuario

@@ -6,13 +6,23 @@ Extrae la lista de features numéricos del GOLD enriquecido
 y los guarda en feature_names_v2_mejorado.json
 
 Ejecución:
-    python src/05_ml_training/0_generar_feature_names.py
+    python src/05_ml_training/generar_feature_names.py
 """
 
 import pandas as pd
 import numpy as np
 import json
+import sys
 from pathlib import Path
+
+# Cargar config
+current_dir = Path(__file__).resolve()
+for parent in current_dir.parents:
+    if (parent / "config.py").exists():
+        sys.path.insert(0, str(parent))
+        break
+
+from config import PATHS, logger
 
 print("=" * 100)
 print("PASO 0: GENERANDO FEATURE NAMES")
@@ -25,11 +35,15 @@ print("=" * 100)
 print("\n1. Cargando GOLD enriquecido...\n")
 
 try:
-    df_gold = pd.read_parquet('data/gold/gold_barrios_enriquecido_test.parquet')
+    gold_path = PATHS['gold']['gold_final']
+    df_gold = pd.read_parquet(gold_path)
     print(f"GOLD: {len(df_gold)} barrios × {len(df_gold.columns)} columnas")
 except FileNotFoundError:
-    print("ERROR: No se encontró gold_barrios_enriquecido.parquet")
+    print(f"ERROR: No se encontró {gold_path}")
     print("   Ejecuta primero el pipeline de enrichment")
+    exit(1)
+except KeyError:
+    print("ERROR: Ruta 'gold_final' no definida en config.py")
     exit(1)
 
 # ============================================================================
@@ -88,7 +102,7 @@ print(f"\nFeatures verificados: LISTO")
 
 print("\n4. Guardando feature_names...\n")
 
-output_path = Path('data/04_train_test/feature_names_v2_mejorado.json')
+output_path = PATHS['gold']['base'].parent.parent / '04_train_test' / 'feature_names_v2_mejorado.json'
 output_path.parent.mkdir(parents=True, exist_ok=True)
 
 with open(output_path, 'w') as f:

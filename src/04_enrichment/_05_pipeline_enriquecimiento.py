@@ -39,8 +39,8 @@ def cargar_funcion_modulo(ruta_script: str, nombre_funcion: str):
     return getattr(modulo, nombre_funcion)
 
 def ejecutar_pipeline_enrichment(
-    ruta_input_gold: Path | str = PATHS["gold"]["gold_test"],
-    ruta_output_gold: str = "data/gold/gold_barrios_enriquecido_test.parquet",
+    ruta_input_gold: Path | str = PATHS["gold"]["gold_1"],
+    ruta_output_gold: Path | str = PATHS["gold"]["gold_final"],
 ):
     start_time = time.time()
     logger.info("=" * 80)
@@ -54,8 +54,8 @@ def ejecutar_pipeline_enrichment(
 
     path_input = Path(ruta_input_gold)
 
-    # Fallback por si el archivo generado es CSV o Parquet con otro nombre
     if not path_input.exists():
+        
         posibles_rutas = [
             Path("data/gold/gold_barrios_base.parquet"),
             Path("data/gold/gold_barrios.parquet"),
@@ -165,7 +165,7 @@ def ejecutar_pipeline_enrichment(
     elapsed_time = time.time() - start_time
     logger.info("=" * 80)
     logger.info("PIPELINE COMPLETADO EXITOSAMENTE")
-    logger.info(f"⏱Tiempo de ejecución: {elapsed_time:.2f} segundos")
+    logger.info(f"Tiempo de ejecución: {elapsed_time:.2f} segundos")
     logger.info(
         f"Dimensiones finales: {len(df_gold_final)} barrios × {len(df_gold_final.columns)} columnas"
     )

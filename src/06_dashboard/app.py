@@ -40,21 +40,21 @@ from config import ALIAS_VARIABLES, get_variable_label
 def cargar_todo():
     """Cargar DATOS, MODELO, SCALER y FEATURES"""
     df_gold = pd.read_parquet(
-        RAIZ / 'data' / 'gold' / 'gold_barrios_enriquecido_test.parquet'
+        RAIZ / 'data' / 'gold' / 'gold_barrios_enriquecido.parquet'
     )
 
     with open(
-        RAIZ / 'data' / '04_train_test' / 'modelo_ensemble_v2_mejorado.pkl', 'rb'
+        RAIZ / 'data' / '04_train_test' / 'modelo_ensemble.pkl', 'rb'
     ) as f:
         modelo = pickle.load(f)
 
     with open(
-        RAIZ / 'data' / '04_train_test' / 'scaler_v2_mejorado.pkl', 'rb'
+        RAIZ / 'data' / '04_train_test' / 'scaler.pkl', 'rb'
     ) as f:
         scaler = pickle.load(f)
 
     with open(
-        RAIZ / 'data' / '04_train_test' / 'feature_names_v2_mejorado.json', 'r'
+        RAIZ / 'data' / '04_train_test' / 'feature_names.json', 'r'
     ) as f:
         feature_names = json.load(f)
 

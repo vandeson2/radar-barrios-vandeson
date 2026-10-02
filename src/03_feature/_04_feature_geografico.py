@@ -24,7 +24,7 @@ def features_geografica() -> pd.DataFrame:
     logger.info("\nCargando datos...")
     df_cons = pd.read_parquet(PATHS["processed"]["cleaned"]["hosteleria_consolidado"])
     df_base = generar_base_barrios()
-    mapeo = pd.read_parquet('data/gold/mapeo_barrios_final.parquet')
+    mapeo = pd.read_parquet(PATHS["gold"]["mapeo_barrios"])
 
     print(f"Consolidado: {df_cons.shape}\n")
 
